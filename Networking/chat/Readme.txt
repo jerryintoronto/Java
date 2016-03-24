@@ -1,0 +1,2 @@
+-Always run Server first
+-Simpified Exception handling (to keep code simple) 
