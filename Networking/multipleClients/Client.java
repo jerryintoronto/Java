@@ -43,7 +43,7 @@ public class Client {
         f.setSize(800, 750);
         f.setVisible(true);
     }
-    //helper class for GUI
+
     static class Square extends JPanel {
         public Square(int location) {
             addMouseListener(

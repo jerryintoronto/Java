@@ -11,10 +11,11 @@ import java.util.concurrent.Executors;
 public class Server {
 
     static JTextArea outputArea;
+    static int max = 5;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         GUI();
-        new Networking();
+        Networking();
     }
 
     static void GUI() {
@@ -22,75 +23,63 @@ public class Server {
         f.setTitle("Server");
         outputArea = new JTextArea();
         outputArea.setFont(new Font("Arial", Font.BOLD, 30));
+        outputArea.append("This is the server - capacity: " + max + "\n");
         f.add(outputArea);
         f.setSize(600, 600);
         f.setVisible(true);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
-    static class Networking {
-        int max = 5;
-        serverThread arr[] = new serverThread[max];
-        ServerSocket server;
-        ExecutorService executor = Executors.newFixedThreadPool(max);
+    static void Networking() throws IOException {
+        ExecutorService e= Executors.newFixedThreadPool(max);
+        ServerSocket s= new ServerSocket(12345, max);
 
-        public Networking() {
+        for (int i = 0; i < max; i++)
+            e.execute(new myClass(s.accept(), i));
+
+    }
+
+    static class myClass implements Runnable {
+        Socket socket;
+        Scanner input;
+        Formatter output;
+        int clientNumber;
+
+        public myClass(Socket s, int n) {
+            clientNumber = n;
+            socket = s;
+
             try {
-                server = new ServerSocket(12345, max);
-            } catch (IOException e) { System.exit(1); }
+                input = new Scanner(socket.getInputStream());
+                output = new Formatter(socket.getOutputStream());
+                output.format("Hello player " + (n + 1) + "/" + max + "\n");
+                output.flush();
+                display("Player " + clientNumber + " connected");
+            }
 
-            display("This is the Server - run me first.");
-            display("I can handle " + max + " Clients");
+            catch (IOException e) { System.exit(1); }
+        }
 
-            for (int i = 0; i < arr.length; i++) {
-                try {
-                    arr[i] = new serverThread(server.accept(), i);
-                    executor.execute(arr[i]);
-                }
-                catch (IOException e) { System.exit(1); }
+        public void run() {
+
+            while (true) {
+                String s = input.nextLine();
+                display("Board location: " + s);
+
+                output.format("SERVER>>>You clicked " + s + "\n");
+                output.flush();
+
+                try { Thread.sleep(400); }
+                catch (Exception e) { }
             }
         }
 
-        private void display(final String s) {
+        void display(String s) {
             SwingUtilities.invokeLater(() -> outputArea.append(s + "\n"));
         }
 
-        class serverThread implements Runnable {
-            //seperate thread for each client hosting
-            Socket socket;
-            Scanner input;
-            Formatter output;
-            int clientNumber;
-
-            public serverThread(Socket s, int n) {
-                clientNumber = n;
-                socket = s;
-
-                try {
-                    input = new Scanner(socket.getInputStream());
-                    output = new Formatter(socket.getOutputStream());
-                } catch (IOException e) { System.exit(1); }
-
-                output.format("Hello player " + (n+1) + "/" + max + "\n");
-                output.flush();
-            }
-
-
-            public void run() {
-                display("Player " + clientNumber + " connected");
-
-                while (true) {
-                    String s = input.nextLine();
-                    display("Board location: " + s);
-
-                    output.format("SERVER>>>You clicked " + s + "\n");
-                    output.flush();
-                    try { Thread.sleep(1000);
-                    } catch (Exception e) { }
-                }
-            }
-        }
     }
 }
+
 
 
