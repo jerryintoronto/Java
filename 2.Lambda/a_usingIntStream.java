@@ -1,9 +1,7 @@
-package Lambda;
-
 import java.util.*;
 import java.util.stream.IntStream;
 
-public class usingIntStream {
+public class a_usingIntStream {
 
     public static void main(String[] args) {
 
