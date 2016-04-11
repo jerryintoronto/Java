@@ -1,9 +1,58 @@
-package MultiThreading;
-
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class usingBooleanFlag {
+public class a_unSynchronizedBuffer {
+
+    /*
+
+OUTPUT(it is random)
+Producer puts 1
+Producer puts 2
+Producer puts 3
+Producer puts 4
+Producer puts 5
+Producer puts 6
+Producer puts 7
+Producer puts 8
+Producer puts 9
+Producer puts 10
+Consumer gets 10
+Consumer gets 10
+Consumer gets 10
+Consumer gets 10
+Consumer gets 10
+Consumer gets 10
+Consumer gets 10
+Consumer gets 10
+Consumer gets 10
+Consumer gets 10
+
+
+EXPECTED (what we want):
+Producer 1
+Consumer 1
+Producer 2
+Consumer 2
+Producer 3
+Consumer 3
+Producer 4
+Consumer 4
+Producer 5
+Consumer 5
+Producer 6
+Consumer 6
+Producer 7
+Consumer 7
+Producer 8
+Consumer 8
+Producer 9
+Consumer 9
+Producer 10
+Consumer 10
+
+
+
+     */
 
     static myBuffer b = new myBuffer();
 
@@ -16,27 +65,13 @@ public class usingBooleanFlag {
 
     static class myBuffer {
         int val = 0;
-        boolean flag = false;
-        public synchronized void put(int v) throws InterruptedException {
-            while (flag) {
-                System.out.println("Producer waits");
-                wait();
-            }
+        public void put(int v) throws InterruptedException {
             val = v;
-            flagPrintNotify("Producer ");
+            System.out.println("Producer puts " + v);
         }
-        public synchronized void get() throws InterruptedException {
-            while (!flag) {
-                System.out.println("Consumer waits");
-                wait();
-            }
-            flagPrintNotify("Consumer ");
 
-        }
-        void flagPrintNotify(String s) {
-            flag = !flag;
-            System.out.println(s + val);
-            notifyAll();
+        public void get() throws InterruptedException {
+            System.out.println("Consumer gets " + val);
         }
     }
 
