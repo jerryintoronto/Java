@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.io.IOException;
 
-public class webViewer {
+public class a_webViewer {
     public static void main(String[] args) {
 
         JFrame f = new JFrame();
