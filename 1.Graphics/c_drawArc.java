@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class drawArc extends JPanel {
+public class c_drawArc extends JPanel {
 
     public static void main(String[] args) {
         JFrame f = new JFrame();

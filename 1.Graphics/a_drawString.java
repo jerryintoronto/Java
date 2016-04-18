@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class drawString extends JPanel {
+public class a_drawString extends JPanel {
 
     public static void main(String[] args) {
         JFrame f = new JFrame();
@@ -28,7 +28,7 @@ public class drawString extends JPanel {
                 g.setColor(new Color(0, i * 30 , i * 30));
                 g.setFont(new Font("Courier", Font.BOLD, 22 + 3*i));
                 g.drawString(output, x + 40 * i, y + 60 *i);
-                output = output.concat("?");
+                output += "?";
 
             }
         }

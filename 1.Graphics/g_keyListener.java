@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-public class keyListener {
+public class g_keyListener {
     static int x = 100;
     static int y = 100;
 

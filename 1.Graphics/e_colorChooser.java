@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class colorChooser extends JPanel {
+public class e_colorChooser extends JPanel {
 
     public static void main(String args[]) {
         JFrame f = new JFrame();
@@ -10,7 +10,7 @@ public class colorChooser extends JPanel {
         b.setFont(new Font("Arial", Font.BOLD, 70));
         
         b.addActionListener(
-                e -> {
+                e -> { //lambda listener
                     Color c = JColorChooser.showDialog(null,
                             "JColorChooser", b.getBackground());
                     if (c != null) {

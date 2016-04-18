@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class nestedLayout {
+public class f_nestedLayout {
 
     public static void main(String[] args) {
 

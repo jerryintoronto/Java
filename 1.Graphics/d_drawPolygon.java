@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.Random;
 
-public class drawPolygon extends JPanel {
+public class d_drawPolygon extends JPanel {
 
     public static void main(String[] args) {
         JFrame f = new JFrame();

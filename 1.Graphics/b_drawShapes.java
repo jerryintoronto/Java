@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class drawShapes extends JPanel {
+public class b_drawShapes extends JPanel {
 
     public static void main(String[] args) {
         JFrame f = new JFrame();
