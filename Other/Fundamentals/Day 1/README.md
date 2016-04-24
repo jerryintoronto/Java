@@ -1,11 +1,11 @@
 #Day 1 
 
-##input
+input
 
     integer N 
     0 >= N > 1000    
     
-##output
+output
 
     The number entered is <N>
     The sum from 1 to <N> is <1 + 2 + 3 + ... N> 
