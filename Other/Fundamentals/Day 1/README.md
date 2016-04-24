@@ -1,5 +1,7 @@
 #Day 1 
 
+##problem
+
 input
 
     integer N 
