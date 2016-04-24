@@ -1,5 +1,13 @@
 import java.util.Scanner;
 
+/*
+    To compile and run this file: 
+    
+    1. RAW -> select all, copy
+    2. IDE -> create new class "Day1Hints", select all, paste, compile and run
+
+*/
+
 public class Day1Hints {
 
     public static void main(String[] args) {
