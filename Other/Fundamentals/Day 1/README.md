@@ -1,11 +1,13 @@
 #Day 1 
 
-##input
+##problem
+
+input
 
     integer N 
     0 >= N > 1000    
     
-##output
+output
 
     The number entered is <N>
     The sum from 1 to <N> is <1 + 2 + 3 + ... N> 
@@ -22,5 +24,3 @@ output
     Then number entered is 6
     The sum from 1 to 6 is 21
     There are 4 even numbers between 0 and 6
-        
-    
