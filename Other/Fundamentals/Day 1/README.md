@@ -23,4 +23,10 @@ output
     
     Then number entered is 6
     The sum from 1 to 6 is 21
+<<<<<<< HEAD
     There are 4 even numbers between 0 and 6
+=======
+    There are 4 even numbers between 0 and 6
+        
+    
+>>>>>>> origin/master
