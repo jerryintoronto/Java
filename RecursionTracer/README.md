@@ -1,4 +1,6 @@
 
+This project is made by myself. I'm facsinated with GUI and recursion, so I decided to do a personal project that would use these two concepts. 
+
 #1
 ![](Screenshots/p1.PNG?raw=true)
 
