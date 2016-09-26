@@ -9,6 +9,9 @@ Excel file can be downloaded <a href="https://github.com/weiyikong/Projects/raw/
 #Price Change
 ![](../Screenshots/excel.JPG?raw=true)
 
+Excel formula:
+```=IFERROR(VLOOKUP(A:A, D:E, 2,FALSE), A3)```
+
 1. Copy & Paste SKU (from Big Commerce .csv) to column A<br> 
 2. Copy & Paste Price (from Big Commerce .csv) to column B<br> 
 3. Copy & Paste SKU (from new price excel sheet) to column D<br> 
