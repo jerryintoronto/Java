@@ -1,7 +1,7 @@
 Excel file can be downloaded <a href="https://github.com/weiyikong/Projects/raw/master/CSV%20Parsing/2.Excel%20Solution/excel%20sheets.xlsx">here</a>
 
 <b>You are working with 3 files </b> <br>
-1. Large .csv file from Big Commerce <br>
+1. Large .csv file from Big Commerce (Manage->Products->Export->"bulk edit")<br>
 2. Smaller file containing all the changes <br> 
 3. Excel file found here containing the VLOOKUP formula <br>
 
