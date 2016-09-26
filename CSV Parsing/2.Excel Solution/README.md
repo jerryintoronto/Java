@@ -1,5 +1,5 @@
 #Price Change
-![](../Screenshots/excel.jpg?raw=true)
+![](../Screenshots/excel.JPG?raw=true)
 
 1. Copy & Paste SKU (from Big Commerce .csv) to column A<br> 
 2. Copy & Paste Price (from Big Commerce .csv) to column B<br> 
@@ -9,6 +9,6 @@
 6. Copy & Paste the new price 
 
 #SKU Change
-![](../Screenshots/excel2.jpg?raw=true)
+![](../Screenshots/excel2.JPG?raw=true)
 
 #Deletion 
