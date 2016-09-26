@@ -1,3 +1,3 @@
-# Personal-Projects
+#Projects
 
 My projects. 
