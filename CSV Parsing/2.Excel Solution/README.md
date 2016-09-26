@@ -10,7 +10,9 @@ Excel file can be downloaded <a href="https://github.com/weiyikong/Projects/raw/
 ![](../Screenshots/excel.JPG?raw=true)
 
 Excel formula:
-```=IFERROR(VLOOKUP(A:A, D:E, 2,FALSE), A3)```
+```
+==IFERROR(VLOOKUP(A3,$D$3:$E$5,2,0),B3)
+```
 
 1. Copy & Paste SKU (from Big Commerce .csv) to column A<br> 
 2. Copy & Paste Price (from Big Commerce .csv) to column B<br> 
