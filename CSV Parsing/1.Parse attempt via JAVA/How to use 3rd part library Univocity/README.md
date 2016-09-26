@@ -8,4 +8,10 @@ Intellj Installation after downloading JAR:
 <li>3. Modules 
 <li>4. Green '+' sign (all the way to the right) 
 <li>5. Add as Jars or Directory; select Jar file 
+</li>
 
+<br>
+```java
+import com.univocity.parsers.csv.CsvParser;
+import com.univocity.parsers.csv.CsvParserSettings;
+```
