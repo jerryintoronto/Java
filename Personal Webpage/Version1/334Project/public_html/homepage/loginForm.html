@@ -1,0 +1,35 @@
+
+<div style = 'text-align: center'>
+
+<h2>Welcome.</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+<button onclick='location.href="homepage/register.php"' style="width:auto;">Register</button>
+<button onclick='location.href="database/start.php"' style="width:auto;">Set Up Database</button>
+
+<div id="id01" class="modal">
+  
+  <form method = "GET" class="modal-content animate" action="homepage/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="homepage/forgot.php">password?</a></span>
+    </div>
+  </form>
+</div>
+
+</div>

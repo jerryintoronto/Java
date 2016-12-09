@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="I love being able to make an impact on the user interface, the aspects of an app or website that the user interacts with and sees">
+    <title>Jerry Kong</title>
+
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #main {
+            display: none;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        .flex-container {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            -ms-box-orient: horizontal;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+        }
+
+        .flex-item {
+            background: transparent;
+            padding: 5px;
+            width: 10%;
+            height: 10px;
+        }
+
+        .progress-label {
+            position: absolute;
+            left: 50%;
+            top: 13px;
+            font-weight: bold;
+            font-size: 50px;
+            text-shadow: 1px 1px 0 #fff;
+        }
+
+        #progressbar {
+            width: 1000px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        #about {
+            color: darkolivegreen;
+            font-size: 20px;
+        }
+
+        .timeline-text {
+            color: darkolivegreen;
+            font-size: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1b6d85;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .cd-date {
+            font-size: 30px;
+            color: #c03b44;
+            font-weight: bold;
+        }
+
+        body {
+            background-color: #1f1f1f;
+        }
+
+        #title {
+            font-size: 0px;
+            cursor: pointer;
+            cursor: hand;
+        }
+
+        #footer {
+            height : 10px;
+            width : 100%;
+            background-color :red;
+        }
+
+    </style>
+
+
+    <script>
+        $(function () {
+
+//            loading bar
+            function progress() {
+                var val = $("#progressbar").progressbar("value");
+                $("#progressbar").progressbar("value", val + 1);
+                if (val < 33)
+                    setTimeout(progress, 90);
+                else if (val < 50)
+                    setTimeout(progress, 60);
+                else if (val < 100) {
+                    setTimeout(progress, 10);
+                }
+            }
+
+            setTimeout(progress, 10);
+
+            progressLabel = $(".progress-label");
+            $("#progressbar").progressbar({
+                change: function () {
+                    progressLabel.text(
+                            $("#progressbar").progressbar("value") + "%");
+                },
+
+//                loading bar finish
+                complete: function () {
+
+                    var pause = false;
+                    animatetimeline()
+                    progressLabel.text("Done!");
+
+                    $(this).fadeOut();
+                    $("#main").fadeIn();
+
+                    $("#title").fadeTo(100, 2).animate({fontSize: '100px'});
+                    $(document).tooltip();
+
+//                 ---------------------
+//                 colors
+//                 -------------------------
+
+                    //random background color
+                    var new_light_color;
+                    var pre_light_color;
+                    var new_dark_color;
+                    var new_dark_color2;
+                    var colors = [[], []];  //2d arrary
+                    var numofc = 1;
+                    var numofcmax = 1;
+
+
+                    function changebackground() {
+                        if (new_light_color != null)
+                            pre_light_color = new_light_color;
+                        new_light_color = 'rgb(' + (Math.floor((256 - 229) * Math.random()) + 230) + ',' + (Math.floor((256 - 229) * Math.random()) + 230) + ',' + (Math.floor((256 - 229) * Math.random()) + 230) + ')';
+                        $("body").animate({backgroundColor: new_light_color}, 1000);
+                        $(".cd-timeline-content").animate({backgroundColor: pre_light_color}, 1500);
+                    }
+
+                    function newdarkcolor() {
+                        new_dark_color = 'rgb(' + (Math.floor((100) * Math.random()) + 25) + ',' + (Math.floor((100) * Math.random()) + 25) + ',' + (Math.floor((100 ) * Math.random()) + 25 ) + ')';
+                        new_dark_color2 = 'rgb(' + (Math.floor((100) * Math.random()) + 25) + ',' + (Math.floor((100) * Math.random()) + 25) + ',' + (Math.floor((100 ) * Math.random()) + 25 ) + ')';
+                    }
+
+                    function changeforegroundcolor() {
+                        newdarkcolor();
+                        $("#about, #title, .cd-date, h2").stop().css({color: new_dark_color}, 1500);
+                        $(".cd-picture, #footer").stop().css({background: new_dark_color}, 1000);
+                        $(".cd-location").stop().css({background: new_dark_color2}, 1000);
+                        $("a, .timeline-text").stop().css({color: new_dark_color2}, 500);
+                    }
+
+
+//                  initial colors
+                    changebackground();
+                    changebackground();
+                    changeforegroundcolor();
+                    savecolors();
+                    topbar();
+
+
+//                  -------------------
+//                  Hover Effects!
+//                  -------------------
+
+                    var minsize = "20px";
+                    var maxsize = "30px";
+
+                    $("#link2, #link1").hover(function () {
+                        $(this).stop().animate({
+                            fontSize: maxsize,
+                        });
+                    }, function () {
+                        $(this).stop().animate({fontSize: minsize});
+                    });
+
+
+                    //empty for now
+                    $(".timeline-text").hover(function () {
+                    }, function () {
+                    });
+
+                    $("#title").click(function () {
+                        changeall()
+                        animatetimeline()
+                    });
+
+
+                    $(".cd-date").hover(function () {
+                        $(this).animate({fontSize: 33});
+                    }, function () {
+                        $(this).animate({fontSize: 30});
+                    });
+
+
+//                  ---------------
+//                  graph
+//                  ---------------
+
+                    createHighChart();
+
+                    function createHighChart(c3, c1, c2, c4) {
+
+                        Highcharts.chart('container', {
+                            chart: {
+                                type: 'column',
+                                backgroundColor: c3
+//                                pre_light_color
+                            },
+
+                            title: {
+                                text: 'My Skills Chart'
+                            },
+
+                            xAxis: {
+                                categories: ['HTML/CSS', 'Javascript', 'Java', 'SQL', 'C']
+                            },
+
+                            plotOptions: {
+                                column: {
+                                    stacking: 'normal'
+                                }
+                            },
+
+                            series: [{
+                                name: 'Future Gain',
+                                data: [5, 7, 1, 1, 1],
+                                stack: 'a',
+                                color: c1
+//                        new_dark_color
+                            }, {
+                                name: 'Current Self Evaluation',
+                                data: [5, 3, 6, 3, 5],
+                                stack: 'a',
+                                color: c2
+//                                new_light_color
+                            }, {
+                                name: 'Interest',
+                                data: [10, 10, 8, 6, 6],
+                                stack: 'b',
+                                color: c4
+//                                new_dark_color2
+                            }]
+                        })
+                    }
+
+
+//                  -----------
+//                  top bar
+//                   ------------
+
+                    $('.row5 li').css({backgroundColor: 'yellow', visibility: 'hidden'});
+                    $('.row1 li, .row2 li, .row3 li, .row4 li').hover(function () {
+                        var a = $(this).index() + 1;
+                        if (a <= numofcmax)
+                            $('.row5 li:nth-child(' + a + ')').css("visibility", 'visible');
+                    }, function () {
+                        $('.row5 li').stop().css("visibility", 'hidden');
+                    });
+
+
+                    $('.row1 li, .row2 li, .row3 li, .row4 li').click(function () {
+
+
+                        var a = $(this).index() + 1;
+                        topbar2(a);
+
+                        if (a <= numofcmax) {
+                            var c1 = colors[a][0]; //new dark
+                            var c2 = colors[a][1]; //new light
+                            var c3 = colors[a][2]; //pre light
+                            var c4 = colors[a][3]; //new dark 2
+
+                            changeallfromtopbar(c1,c2,c3,c4);
+                        }
+                    });
+
+
+                    function savecolors() {
+                        colors[numofc] = [];
+                        colors[numofc][0] = new_dark_color;
+                        colors[numofc][1] = new_light_color;
+                        colors[numofc][2] = pre_light_color;
+                        colors[numofc][3] = new_dark_color2;
+                    }
+
+
+                    function topbar() {
+                        $('.row1 li:nth-child(' + (numofc) + ')').stop().css("background-color", 'white');
+                        $('.row2 li:nth-child(' + (numofc) + ')').stop().css("background-color", 'white');
+                        $('.row3 li:nth-child(' + (numofc) + ')').stop().css("background-color", 'white');
+                        $('.row4 li:nth-child(' + (numofc) + ')').stop().css("background-color", 'white');
+
+                        $('.row1 li:nth-child(' + (numofc) + ')').animate({"background-color": colors[numofc][0]}, 'slow');
+                        $('.row2 li:nth-child(' + (numofc) + ')').animate({"background-color": colors[numofc][1]}, 'slow');
+                        $('.row3 li:nth-child(' + (numofc) + ')').animate({"background-color": colors[numofc][2]}, 'slow');
+                        $('.row4 li:nth-child(' + (numofc) + ')').animate({"background-color": colors[numofc][3]}, 'slow');
+                    }
+
+                    function topbar2(n) {
+                        var c1 = colors[n][0];
+                        var c2 = colors[n][1];
+                        var c3 = colors[n][2];
+                        var c4 = colors[n][3];
+
+                        $('.row1 li:nth-child(' + (n) + ')').stop().css("background-color", 'white');
+                        $('.row2 li:nth-child(' + (n) + ')').stop().css("background-color", 'white');
+                        $('.row3 li:nth-child(' + (n) + ')').stop().css("background-color", 'white');
+                        $('.row4 li:nth-child(' + (n) + ')').stop().css("background-color", 'white');
+
+                        $('.row1 li:nth-child(' + (n) + ')').animate({"background-color": c1 }, 'slow');
+                        $('.row2 li:nth-child(' + (n) + ')').animate({"background-color": c2 }, 'slow');
+                        $('.row3 li:nth-child(' + (n) + ')').animate({"background-color": c3 }, 'slow');
+                        $('.row4 li:nth-child(' + (n) + ')').animate({"background-color": c4 }, 'slow');
+                    }
+
+
+//                   ----------------------
+//                    scroll color changes
+//                   ----------------------
+
+
+                    function changeall() {
+                        if (!pause) {
+                            changebackground();
+                            changeforegroundcolor();
+
+                            numofc++;
+                            if (numofc == 11)
+                                numofc = 1; //start over
+
+                            savecolors();
+                            topbar();
+
+                            if (numofcmax < 10)
+                                numofcmax = numofc;
+
+                            setTimeout(createHighChart(pre_light_color, new_dark_color, new_light_color, new_dark_color2), 500);
+                        }
+
+                    }
+
+                    function changeallfromtopbar(c1,c2,c3,c4)
+                    {
+                        animatetimeline()
+
+                        //change color to selected
+                            $("body").animate({backgroundColor: c2}, 1000);
+                            $(".cd-timeline-content").animate({backgroundColor: c3}, 1500);
+                            $("#about, #title, .cd-date, h2").stop().css({color: c1}, 1500);
+                            $(".cd-picture, #footer").stop().css({background: c1}, 1000);
+                            $(".cd-location").stop().css({background: c4}, 1000);
+                            $("a, .timeline-text").stop().css({color: c4}, 500);
+                            setTimeout(createHighChart(c3, c1, c2, c4), 500);
+                    }
+
+                    var scrolls = 1;
+                    $(document).scroll(function () {
+                        scrolls += 1;
+                        if (scrolls % 70 == 0) {
+                            changeall();
+                        }
+                    });
+
+                    $(window).scroll(function() {
+                        if($(window).scrollTop() + $(window).height() > $(document).height() - 50) {
+                            $('#cd-timeline::before').animate({width : '20px'});
+
+                            $('#footer li').html(function () {
+                                var a = 1;
+                                $('#footer li:nth-child(' + a + ')').animate("background-color", 'white');
+                                $('#footer li:nth-child(' + a + ')').animate("height", '30px');
+                            }, function () {
+                                $('#footer li:nth-child(' + a + ')').animate("background-color", new_dark_color);
+                            });
+                        }
+                    });
+
+
+
+                }
+//             -----------   end ------------------------------------
+
+            });
+
+
+        });
+    </script>
+
+
+    <!--timeline-->
+
+
+</head>
+
+
+<!--body-->
+
+
+<body>
+<div id="progressbar">
+    <div class="progress-label">
+        Loading...
+    </div>
+</div>
+
+<div id="main">
+
+
+    <ul class="flex-container row1">
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+    </ul>
+
+    <ul class="flex-container row2">
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+    </ul>
+
+    <ul class="flex-container row3">
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+    </ul>
+
+
+    <ul class="flex-container row4">
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+    </ul>
+
+    <ul class="flex-container row5">
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+    </ul>
+
+
+    <div class="text-center">
+            <h1 id="title">Jerry Kong</h1>
+        <a id="link1" href="https://ca.linkedin.com/in/jerrywkong" title="Learn more about my background">Find me on
+            LinkedIn</a> <br>
+        <a id="link2" href="https://github.com/weiyikong/Projects" title="See source code of projects">My projects on Github</a>
+        <br>
+        <br>
+        <div id="about" >
+            HTML/CSS, jQuery, AngularJS(learning) .<br>
+            Java, C, SQL, PHP(basic). <br>
+            Algorithm problems and data structures. <br>
+            VIM, GIT(basic), WordPress CMS and others.
+        </div>
+    </div>
+
+
+    <!--highchart-->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <br><br>
+    <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+
+    <!--timeline-->
+    <section id="cd-timeline" class="cd-container">
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture" title="Toronto"></div> <!-- cd-timeline-img -->
+
+            <div class="cd-timeline-content">
+                <h2>Business Understanding</h2>
+                <p class="timeline-text">
+                <ul>
+                    <li>Economics, Accounting, Finance</li>
+                    <li>Management, Marketing, Human Resource</li>
+                </ul>
+                </p>
+                <span class="cd-date">2008 - 2012 </span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture" title="Toronto, Edmonton">
+            </div> <!-- cd-timeline-img -->
+
+            <div class="cd-timeline-content">
+                <h2>Working </h2>
+                <p class="timeline-text">
+                <ul>
+                    <li>Excel, Photoshop</li>
+                    <li>Quality control</li>
+                </ul>
+                </p>
+                <span class="cd-date">2012 - 2015</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture" title="Windsor">
+            </div> <!-- cd-timeline-img -->
+
+            <div class="cd-timeline-content">
+                <h2>Computer Science Education</h2>
+                <p class="timeline-text">
+                <ul>
+                    <li>Club co-founder and treasurer</li>
+                    <li>White boarding experience</li>
+                    <li>Mock interview with Google</li>
+                    <li>TA experience</li>
+                </ul>
+                </p>
+                <a href="http://www1.uwindsor.ca/cs/835/bcs-general-for-university-graduates" class="cd-read-more">Learn
+                    more about the program</a>
+                <span class="cd-date">2015 to 2016 </span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture" title="Windsor">
+            </div> <!-- cd-timeline-img -->
+
+            <div class="cd-timeline-content">
+                <h2>Internships </h2>
+                <p class="timeline-text">
+                <ul>
+                    <li>Grails, HTML, CSS, Wordpress CMS</li>
+                </ul>
+                </p>
+                <span class="cd-date">Fall of 2016</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-location" title="Windsor">
+            </div> <!-- cd-timeline-img -->
+
+            <div class="cd-timeline-content">
+                <h2>Learning Goals</h2>
+                <p class="timeline-text">
+                <ul>
+                    <li>jQuery</li>
+                    <li>MV* Javascript Frameworks (Angular, React, Ember, Knockout, Backbone)</li>
+                    <li>Unit Testing (Jasmine, Karma)</li>
+                    <li>Front End Build Tools (Bower, Yeoman, Grunt, Gulp, Browserify, Require)</li>
+                    <li>CSS Tools (Precompliers(SASS/LESS), CSS Frameworks: (Bootstrap/Foundation))</li>
+                </ul>
+                </p>
+                <span class="cd-date">Currently</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+    </section> <!-- cd-timeline -->
+
+    <div align = 'center' >
+        <a href="#" title="Scroll to the top of the page">&uarr; Back to top</a>
+    </div>
+
+    <ul class="flex-container" id = "footer">
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+        <li class="flex-item"></li>
+    </ul>
+</div>
+
+<script src="js/timeline.js"></script> <!-- Resource jQuery -->
+<script src="js/modernizr.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
