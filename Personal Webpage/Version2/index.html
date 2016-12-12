@@ -35,6 +35,7 @@
             display: -ms-flexbox;
             display: -webkit-flex;
             display: flex;
+            cursor: pointer;
         }
 
         .flex-item {
@@ -43,6 +44,12 @@
             width: 10%;
             height: 10px;
         }
+
+        .block {
+            background: yellow;
+            height: 10%;
+        }
+
 
         .progress-label {
             position: absolute;
@@ -96,15 +103,16 @@
         }
 
         #title {
-            font-size: 0px;
+            font-size: 130px;
             cursor: pointer;
             cursor: hand;
         }
 
-        #footer {
-            height : 10px;
-            width : 100%;
-            background-color :red;
+        #page2
+        {
+            height: 100vh;
+            display: none;
+
         }
 
     </style>
@@ -145,7 +153,6 @@
                     $(this).fadeOut();
                     $("#main").fadeIn();
 
-                    $("#title").fadeTo(100, 2).animate({fontSize: '100px'});
                     $(document).tooltip();
 
 //                 ---------------------
@@ -162,34 +169,33 @@
                     var numofcmax = 1;
 
 
+
                     function changebackground() {
-                        if (new_light_color != null)
-                            pre_light_color = new_light_color;
-                        new_light_color = 'rgb(' + (Math.floor((256 - 229) * Math.random()) + 230) + ',' + (Math.floor((256 - 229) * Math.random()) + 230) + ',' + (Math.floor((256 - 229) * Math.random()) + 230) + ')';
+                        new_light_color = 'rgb(' + (Math.floor((256 - 229) * Math.random()) + 220) + ',' + (Math.floor((256 - 229) * Math.random()) + 200) + ',' + (Math.floor((256 - 229) * Math.random()) + 200) + ')';
+                        pre_light_color = 'rgb(' + (Math.floor((256 - 229) * Math.random()) + 220) + ',' + (Math.floor((256 - 229) * Math.random()) + 200) + ',' + (Math.floor((256 - 229) * Math.random()) + 200) + ')';
                         $("body").animate({backgroundColor: new_light_color}, 1000);
                         $(".cd-timeline-content").animate({backgroundColor: pre_light_color}, 1500);
                     }
 
-                    function newdarkcolor() {
-                        new_dark_color = 'rgb(' + (Math.floor((100) * Math.random()) + 25) + ',' + (Math.floor((100) * Math.random()) + 25) + ',' + (Math.floor((100 ) * Math.random()) + 25 ) + ')';
-                        new_dark_color2 = 'rgb(' + (Math.floor((100) * Math.random()) + 25) + ',' + (Math.floor((100) * Math.random()) + 25) + ',' + (Math.floor((100 ) * Math.random()) + 25 ) + ')';
-                    }
 
                     function changeforegroundcolor() {
-                        newdarkcolor();
-                        $("#about, #title, .cd-date, h2").stop().css({color: new_dark_color}, 1500);
+                        var min = 70;
+                        var range = 70;
+                        new_dark_color = 'rgb(' + (Math.floor((range) * Math.random()) + min ) + ',' + (Math.floor((range) * Math.random()) + min -30 ) + ',' + (Math.floor((range ) * Math.random()) + min - 70 ) + ')';
+                        new_dark_color2 = 'rgb(' + (Math.floor((range) * Math.random()) + min ) + ',' + (Math.floor((range) * Math.random()) + min - 30) + ',' + (Math.floor((range ) * Math.random()) + min - 70 ) + ')';
+                        $("#about, #title, .cd-date, h2").stop().css('color','white').animate({color: new_dark_color}, 1000);
                         $(".cd-picture, #footer").stop().css({background: new_dark_color}, 1000);
                         $(".cd-location").stop().css({background: new_dark_color2}, 1000);
-                        $("a, .timeline-text").stop().css({color: new_dark_color2}, 500);
+                        $("a, .timeline-text").stop().css('color','white').animate({color: new_dark_color2}, 1000);
                     }
 
 
 //                  initial colors
                     changebackground();
-                    changebackground();
                     changeforegroundcolor();
                     savecolors();
                     topbar();
+                    setTimeout(createHighChart(pre_light_color, new_dark_color, new_light_color, new_dark_color2), 500);
 
 
 //                  -------------------
@@ -213,9 +219,17 @@
                     }, function () {
                     });
 
+                    //3rd trigger
                     $("#title").click(function () {
-                        changeall()
+
+                        var cur = $(this).css('color');
+                        console.log(cur);
+                        $(this).css({color: 'white'});
+//                        $(this).css({color: cur}, 1000);
+
+                        changeallscrolling()
                         animatetimeline()
+                        titleanimation();
                     });
 
 
@@ -230,7 +244,6 @@
 //                  graph
 //                  ---------------
 
-                    createHighChart();
 
                     function createHighChart(c3, c1, c2, c4) {
 
@@ -246,7 +259,7 @@
                             },
 
                             xAxis: {
-                                categories: ['HTML/CSS', 'Javascript', 'Java', 'SQL', 'C']
+                                categories: ['HTML/CSS', 'jQuery', 'Angular.JS', 'React.JS']
                             },
 
                             plotOptions: {
@@ -257,19 +270,19 @@
 
                             series: [{
                                 name: 'Future Gain',
-                                data: [5, 7, 1, 1, 1],
+                                data: [4, 5, 7, 9],
                                 stack: 'a',
                                 color: c1
 //                        new_dark_color
                             }, {
                                 name: 'Current Self Evaluation',
-                                data: [5, 3, 6, 3, 5],
+                                data: [6, 5, 3, 1],
                                 stack: 'a',
                                 color: c2
 //                                new_light_color
                             }, {
                                 name: 'Interest',
-                                data: [10, 10, 8, 6, 6],
+                                data: [10, 10, 10, 10],
                                 stack: 'b',
                                 color: c4
 //                                new_dark_color2
@@ -285,8 +298,9 @@
                     $('.row5 li').css({backgroundColor: 'yellow', visibility: 'hidden'});
                     $('.row1 li, .row2 li, .row3 li, .row4 li').hover(function () {
                         var a = $(this).index() + 1;
-                        if (a <= numofcmax)
+                        if (a <= numofcmax){
                             $('.row5 li:nth-child(' + a + ')').css("visibility", 'visible');
+                        }
                     }, function () {
                         $('.row5 li').stop().css("visibility", 'hidden');
                     });
@@ -353,7 +367,9 @@
 //                   ----------------------
 
 
-                    function changeall() {
+                    function changeallscrolling() {
+//                        this is triggered through scrolling
+                        
                         if (!pause) {
                             changebackground();
                             changeforegroundcolor();
@@ -377,7 +393,7 @@
                     {
                         animatetimeline()
 
-                        //change color to selected
+                        //2nd trigger from clicking top bar
                             $("body").animate({backgroundColor: c2}, 1000);
                             $(".cd-timeline-content").animate({backgroundColor: c3}, 1500);
                             $("#about, #title, .cd-date, h2").stop().css({color: c1}, 1500);
@@ -385,18 +401,39 @@
                             $(".cd-location").stop().css({background: c4}, 1000);
                             $("a, .timeline-text").stop().css({color: c4}, 500);
                             setTimeout(createHighChart(c3, c1, c2, c4), 500);
+                            titleanimation();
                     }
 
                     var scrolls = 1;
                     $(document).scroll(function () {
                         scrolls += 1;
-                        if (scrolls % 70 == 0) {
-                            changeall();
+                        if (scrolls % 120 == 0) {
+                            changeallscrolling();
                         }
                     });
 
+
+                    //scroll to end
                     $(window).scroll(function() {
-                        if($(window).scrollTop() + $(window).height() > $(document).height() - 50) {
+                        if($(window).scrollTop() + $(window).height() > $(document).height() - 10) {
+
+
+                            $('#main').css('display', 'none');
+                            $('#page2').fadeIn();
+
+
+
+                            var color;
+
+                            color = 'rgb(' + (Math.floor((256 - 229) * Math.random()) + 220) + ',' + (Math.floor((256 - 229) * Math.random()) + 200) + ',' + (Math.floor((256 - 229) * Math.random()) + 200) + ')';
+
+                            $('.block').css('color', color);
+
+
+
+
+//                            setTimeout($('#main').fadeIn(), 2000);
+
                             $('#cd-timeline::before').animate({width : '20px'});
 
                             $('#footer li').html(function () {
@@ -432,9 +469,7 @@
 
 <body>
 <div id="progressbar">
-    <div class="progress-label">
-        Loading...
-    </div>
+    <div class="progress-label"> </div>
 </div>
 
 <div id="main">
@@ -539,6 +574,7 @@
                 <h2>Business Understanding</h2>
                 <p class="timeline-text">
                 <ul>
+                    <li>Studied at top university</li>
                     <li>Economics, Accounting, Finance</li>
                     <li>Management, Marketing, Human Resource</li>
                 </ul>
@@ -552,11 +588,12 @@
             </div> <!-- cd-timeline-img -->
 
             <div class="cd-timeline-content">
-                <h2>Working </h2>
+                <h2>Working and Exploring</h2>
                 <p class="timeline-text">
                 <ul>
-                    <li>Excel, Photoshop</li>
-                    <li>Quality control</li>
+                    <li>Worked in several different jobs</li>
+                    <li>Quality control of manufacturing via testing</li>
+                    <li>Worked at photo printing shops</li>
                 </ul>
                 </p>
                 <span class="cd-date">2012 - 2015</span>
@@ -591,7 +628,9 @@
                 <h2>Internships </h2>
                 <p class="timeline-text">
                 <ul>
-                    <li>Grails, HTML, CSS, Wordpress CMS</li>
+                    <li>Worked in a couple of short internships</li>
+                    <li>Grails backend with JavascriptMVC front</li>
+                    <li>Built static websites via wordpress and other CMSes</li>
                 </ul>
                 </p>
                 <span class="cd-date">Fall of 2016</span>
@@ -618,22 +657,37 @@
         </div> <!-- cd-timeline-block -->
     </section> <!-- cd-timeline -->
 
+
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
     <div align = 'center' >
         <a href="#" title="Scroll to the top of the page">&uarr; Back to top</a>
     </div>
 
-    <ul class="flex-container" id = "footer">
-        <li class="flex-item"></li>
-        <li class="flex-item"></li>
-        <li class="flex-item"></li>
-        <li class="flex-item"></li>
-        <li class="flex-item"></li>
-        <li class="flex-item"></li>
-        <li class="flex-item"></li>
-        <li class="flex-item"></li>
-        <li class="flex-item"></li>
-        <li class="flex-item"></li>
-    </ul>
+
+</div>
+
+
+<div id = 'page2'>
+
+    <div class = 'block'> </div>
+    <div class = 'block'> </div>
+    <div class = 'block'> </div>
+    <div class = 'block'> </div>
+    <div class = 'block'> </div>
+    <div class = 'block'> </div>
+    <div class = 'block'> </div>
+    <div class = 'block'> </div>
+    <div class = 'block'> </div>
+    <div class = 'block'> </div>
+
 </div>
 
 <script src="js/timeline.js"></script> <!-- Resource jQuery -->
