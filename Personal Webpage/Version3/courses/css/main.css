@@ -1,0 +1,59 @@
+body, html {
+    background: ghostwhite;
+    margin: 20px;
+    padding: 0;
+}
+
+.header {
+    background: lightcyan;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    width: 75%;
+}
+
+.main {
+    margin: 0 auto 0;
+}
+
+.main h2 {
+    border-bottom: 1px solid #bce8f1;
+    color: #0D3349;
+    font-size: 48px;
+    margin: 20px 0;
+    padding: 20px 0;
+}
+
+.event {
+    padding: 20px;
+    width: 100%;
+}
+
+.event:hover {
+    background: rgba(255,255,255,0.9);
+}
+
+.event h3 {
+    color: #1c1c1c;
+    font-size: 24px;
+    margin: 0;
+}
+
+.event p {
+    color: #1b6d85;
+}
+
+.event:hover a {
+    text-decoration: none;
+}
+
+.event-detail p {
+    color: #1b6d85;
+}
+
+p.time {
+    font-size: 20px;
+    font-weight: bold;
+}
