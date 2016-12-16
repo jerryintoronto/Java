@@ -9,18 +9,15 @@
 
 @media (min-width: 320px) {
     .return {
-        font-size: 110%;
-    }
-
-
-
-}
-
-@media (min-width: 520px) {
-    .return {
-        font-size: 130%;
+        font-size: 150%;
+        width: 30%;
+        height: 18%;
+        align-content: center;
+        border: dashed;
+        margin: 0 auto;
     }
 }
+
 
 @media (min-width: 1025px ) {
     .return {

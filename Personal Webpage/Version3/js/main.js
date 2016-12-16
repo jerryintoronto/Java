@@ -18,8 +18,6 @@ function loadingcompleted() {
     setupmainpage()
 
     function setupmainpage() {
-        progressLabel.text("Done!");
-        $('#loadingpage').fadeOut();
         $("#main").fadeIn();
         animatetimeline()
     }
@@ -264,7 +262,7 @@ function loadingcompleted() {
         if (activepage2) {
             //scroll to end
             $(window).scroll(function () {
-                if ($(window).scrollTop() + $(window).height() > $(document).height() - 10) {
+                if ($(window).scrollTop() + $(window).height() > $(document).height() - 250) {
                     scrolledtoend();
                 }
             });
@@ -275,13 +273,14 @@ function loadingcompleted() {
 
 
         if (activepage2) {
+            activepage2 = false;
             $('#main').css({display: 'none'});
             $('#page2').fadeIn();
             recursiveshow(1);
             setTimeout(function () {
                 recursivehide(10);
-            }, 900);
-            setTimeout(showsecret, 4500);
+            }, 600);
+            setTimeout(showsecret, 3600);
 
 
             $("#typed").typed({
@@ -297,7 +296,6 @@ function loadingcompleted() {
             //return to main page
             $('.return').hover(function () {
 
-                activepage2 = false;
                 $('#main').fadeIn();
                 $('#page2').css({display: 'none'});
                 $('#page2').stop();
