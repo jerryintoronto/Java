@@ -9,54 +9,22 @@
     <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    <link rel="stylesheet" href="css/main.css"> <!-- Resource style -->
-    <link rel="stylesheet" href="css/page2.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/page2.css">
     <script src="js/typed.js" type="text/javascript"></script>
-    <script src="js/velocity.min.js" type ="text/javascript"></script>
-
-    <style>
-
-
-        /*currently bugged*/
-        @media (min-width: 320px) {
-            .fastforward {
-                width: 15%;
-                height: 10%;
-                align-content: center;
-                font-size: 130%;
-                border: dashed;
-                margin: 0 auto;
-                background: red;
-            }
-        }
-
-        @media (min-width: 1025px) {
-            .fastforward {
-                width: 15%;
-                height: 50%;
-                align-content: center;
-                font-size: 200%;
-                border: dashed;
-                margin: 0 auto;
-                background: red;
-            }
-        }
-
-    </style>
-
 
     <script>
         $(function () {
 
-//            loading bar
+            //loading bar
             setTimeout(progress, 10);
 
             function progress() {
                 var val = $("#progressbar").progressbar("value");
                 $("#progressbar").progressbar("value", val + 1);
-                if (val < 33)
+                if (val < 13)
                     setTimeout(progress, 90);
-                else if (val < 50)
+                else if (val < 30)
                     setTimeout(progress, 60);
                 else if (val < 100) {
                     setTimeout(progress, 10);
@@ -64,6 +32,8 @@
             }
 
             progressLabel = $(".progress-label");
+
+            //loading text
             $("#progressbar").progressbar({
                 change: function () {
                     progressLabel.text(
@@ -71,17 +41,11 @@
                 },
 
                 complete: function () {
-
-                    //js/main.js
-                    loadingcompleted()
+                    loadingcompleted(); //js/main.js
                 }
             });
         });
     </script>
-
-
-    <!--timeline-->
-
 
 </head>
 
@@ -94,8 +58,6 @@
 <div id="loadingpage">
     <div id="progressbar">
         <div class="progress-label"></div>
-    </div>
-    <div class = 'fastforward'>
     </div>
 </div>
 
@@ -171,18 +133,16 @@
     </ul>
 
 
+    <!--title and intro-->
+
     <div class="text-center">
         <h1 id="title">Jerry Kong</h1>
-        <a id="link1" href="https://ca.linkedin.com/in/jerrywkong" title="Learn more about my background">Find me on
-            LinkedIn</a> <br>
-        <a id="link2" href="projects/index.html" title="See source code of projects">My projects on Github</a>
-        <br>
-        <br>
+        <a id="link1" href="https://ca.linkedin.com/in/jerrywkong"> -LinkedIn-</a> <br>
+        <a id="link2" href="projects/index.html" >-Github-</a>
+        <br> <br>
         <div id="about">
-            HTML/CSS, jQuery, AngularJS(learning) .<br>
-            Java, C, SQL, PHP(basic). <br>
-            Algorithm problems and data structures. <br>
-            VIM, GIT(basic), WordPress CMS and others.
+            <i> jQuery, AngularJS(learning). Front-end focused </i><br>
+            Java, SQL, PHP(basic), Wordpress CMS experience. <br>
         </div>
     </div>
 
@@ -285,14 +245,7 @@
         </div> <!-- cd-timeline-block -->
     </section> <!-- cd-timeline -->
 
-
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <br><br> <br><br> <br><br>
 
     <div align='center'>
         <div id='backtop'>
@@ -329,25 +282,19 @@
                     <p>Using <em>HighCharts, Vertical Timeline and Typed.Js</em></p>
                     <p>Built, designed by <strong>Jerry Kong</strong>.</p>
                     <p>Engineering in jQuery.</p>
-                    <p>Have you tried clicking on 'Jerry Kong'?</p>
                 </div>
                 <span id="typed" style="white-space:pre;"></span>
             </div>
 
             <br><br><br>
         </div>
-
-
         <div class='return'> Return</div>
-
-
     </div>
-
 </div>
 
-<script src="js/timeline.js"></script> <!-- Resource jQuery -->
-<script src="js/modernizr.js"></script>
 <script src="js/main.js"></script>
+<script src="js/timeline.js"></script>
+<script src="js/modernizr.js"></script>
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 

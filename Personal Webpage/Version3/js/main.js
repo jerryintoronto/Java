@@ -1,31 +1,3 @@
-function animatetimeline(){
-    var timelineBlocks = $('.cd-timeline-block'),
-        offset = 0.6;
-
-    //hide timeline blocks which are outside the viewport
-    hideBlocks(timelineBlocks, offset);
-
-    //on scolling, show/animate timeline blocks when enter the viewport
-    $(window).on('scroll', function(){
-        (!window.requestAnimationFrame)
-            ? setTimeout(function(){ showBlocks(timelineBlocks, offset); }, 100)
-            : window.requestAnimationFrame(function(){ showBlocks(timelineBlocks, offset); });
-    });
-
-    function hideBlocks(blocks, offset) {
-        console.log('?');
-        $(blocks).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden').removeClass('bounce-in');
-        // (function(){ ( $(this).offset().top > $(window).scrollTop()+$(window).height()*offset ) && $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden'); });
-    }
-
-    function showBlocks(blocks, offset) {
-        blocks.each(function(){
-            ( $(this).offset().top <= $(window).scrollTop()+$(window).height()*offset && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) && $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
-        });
-    }
-}
-
-
 function loadingcompleted() {
 
 //                 ---------------------
@@ -50,7 +22,6 @@ function loadingcompleted() {
         $('#loadingpage').fadeOut();
         $("#main").fadeIn();
         animatetimeline()
-        $(document).tooltip();
     }
 
     function changebackground() {
@@ -89,17 +60,6 @@ function loadingcompleted() {
 //                  -------------------
     generalhovereffects()
     function generalhovereffects() {
-
-        var minsize = "20px";
-        var maxsize = "22px";
-
-        $("#link2, #link1").hover(function () {
-            $(this).stop().animate({
-                fontSize: maxsize,
-            });
-        }, function () {
-            $(this).stop().animate({fontSize: minsize});
-        });
 
 
         //clicking on my name
@@ -140,6 +100,8 @@ function loadingcompleted() {
                 text: 'My Skills Chart'
             },
 
+            tooltip: {enabled: false},
+
             xAxis: {
                 categories: ['HTML/CSS', 'jQuery', 'Angular.JS', 'React.JS']
             },
@@ -147,7 +109,15 @@ function loadingcompleted() {
             plotOptions: {
                 column: {
                     stacking: 'normal'
+                },
+                series: {
+                    stats: {
+                        hover: {
+                            enabled: false
+                        }
+                    }
                 }
+
             },
 
             series: [{
@@ -287,7 +257,7 @@ function loadingcompleted() {
         $(document).scroll(function () {
             scrolls += 1;
             if (scrolls % 120 == 0) {
-                changeallscrolling();
+                // changeallscrolling();
             }
         });
 
@@ -358,7 +328,6 @@ function loadingcompleted() {
                 }, 155);
         }
 
-
         function showsecret() {
             $('.secret').css({height: '50%'});
             $('.secret').fadeIn();
@@ -367,5 +336,37 @@ function loadingcompleted() {
 
 //             -----------   end ------------------------------------
 
+    }
+}
+
+
+function animatetimeline() {
+    var timelineBlocks = $('.cd-timeline-block'),
+        offset = 0.6;
+
+    //hide timeline blocks which are outside the viewport
+    hideBlocks(timelineBlocks, offset);
+
+    //on scolling, show/animate timeline blocks when enter the viewport
+    $(window).on('scroll', function () {
+        (!window.requestAnimationFrame)
+            ? setTimeout(function () {
+                showBlocks(timelineBlocks, offset);
+            }, 100)
+            : window.requestAnimationFrame(function () {
+                showBlocks(timelineBlocks, offset);
+            });
+    });
+
+    function hideBlocks(blocks, offset) {
+        console.log('?');
+        $(blocks).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden').removeClass('bounce-in');
+        // (function(){ ( $(this).offset().top > $(window).scrollTop()+$(window).height()*offset ) && $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden'); });
+    }
+
+    function showBlocks(blocks, offset) {
+        blocks.each(function () {
+            ( $(this).offset().top <= $(window).scrollTop() + $(window).height() * offset && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) && $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+        });
     }
 }
