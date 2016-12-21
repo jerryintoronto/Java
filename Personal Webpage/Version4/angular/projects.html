@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+  <head>
+
+      <!--<link rel="../css/bootstrap.min.css" type="text/css" href="style.css">-->
+      <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <!-- Include the AngularJS library -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+
+
+
+  </head>
+  <body ng-app="jerry">
+
+  <script src="../js/nanobar.min.js"></script>
+  <script> var simplebar = new Nanobar(); simplebar.go(100); </script>
+
+
+
+
+
+
+  <style>
+      body {
+          font-family: "Lato", sans-serif;
+          transition: background-color .5s;
+      }
+
+      .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+      }
+
+      .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s
+      }
+
+      .sidenav a:hover, .offcanvas a:focus{
+          color: #f1f1f1;
+      }
+
+      .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+      }
+
+      #mainmenu {
+          transition: margin-left .5s;
+          padding: 16px;
+      }
+
+      @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+      }
+  </style>
+
+  <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../index.html">Home</a>
+      <a href="index.html">Angular</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+  </div>
+
+  <div id="mainmenu">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  </div>
+
+  <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+          createHighChart();
+      }
+
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.body.style.backgroundColor = "white";
+
+          createHighChart(new_light_color2, new_dark_color, new_light_color, new_dark_color2);
+      }
+  </script>
+
+
+
+
+
+
+
+
+    <div class="header">
+      <div class="container">
+          <a href = '../index.html'>
+        <h1>My Projects</h1>
+          </a>
+
+
+      </br>
+    </div>
+
+
+    <div class="main" ng-controller="MainController">
+      <div class="container">
+        <div class="card" ng-repeat="project in apps">
+          <app-info info="project"></app-info>
+          <install-app info ="project"></install-app>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modules -->
+    <script>
+        var app = angular.module('jerry', []);
+
+        app.controller('MainController', ['$scope', function($scope) {
+
+            $scope.apps = [
+
+                {
+                    icon: 'projects/img/personweb.JPG',
+                    title: 'Person WebPage',
+                    lang: 'jQuery, Angular.JS',
+                    url : 'https://github.com/weiyikong/Projects/tree/master/Personal%20Webpage',
+                    date:'2016'
+                } ,
+                {
+                    icon: 'projects/img/schoolweb.JPG',
+                    title: 'PHP Website',
+                    lang: 'Php',
+                    url : 'https://github.com/weiyikong/Projects/tree/master/School%20web%20project',
+                    date: '2016'
+                },
+                {
+                    icon: 'projects/img/drawingchat.PNG',
+                    title: 'Drawing and Chat',
+                    lang: 'Java',
+                    url : 'https://github.com/weiyikong/Projects/tree/master/Java%20Drawing%20and%20Chat',
+                    date: '2016'
+                },
+
+                {
+                    icon: 'projects/img/recursion.PNG',
+                    title: 'Recursion GUI Tracing',
+                    lang: 'Java',
+                    url : 'https://github.com/weiyikong/Projects/tree/master/Recursion%20GUI%20Tracing%20in%20Java',
+                    date: '2016'
+                },
+
+                {
+                    icon: 'projects/img/coding.JPG',
+                    title: 'Coding Problems',
+                    lang: 'Java',
+                    url : 'https://github.com/weiyikong/Projects/tree/master/Coding%20Problems',
+                    date: '2016'
+                },
+                {
+                    icon: 'projects/img/tutorial.JPG',
+                    title: 'Basic Tutorials',
+                    lang: 'Java, C, MASM',
+                    url : 'https://github.com/weiyikong/Projects/tree/master/Basic%20Tutorials',
+                    date: '2016'
+                }
+
+
+            ];
+        }]);
+
+        app.directive('appInfo', function() {
+            return {
+                restrict: 'E',
+                scope: {
+                    info: '='
+                },
+                templateUrl: 'projects/top.html'
+            };
+        });
+
+
+        app.directive('installApp', function() {
+            return {
+                restrict: 'E',
+                scope: { info: '=' },
+
+                link: function(scope, element, attrs) {
+                    scope.buttonText = "See Source Code";
+                } ,
+                templateUrl: 'projects/bot.html'
+            };
+        });
+
+    </script>
+    </div>
+  </body>
+</html>

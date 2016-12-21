@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+
+    <style>
+        .main { margin-left: 5%; text-align: left; }
+        .main h2 { border-bottom: 1px solid #bce8f1; font-size: 7vmin; }
+        .event h3 { font-size: 5vmin; }
+        p { color: #1b6d85; }
+        .event:hover a { text-decoration: none; }
+    </style>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../legacy/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+</head>
+
+<body ng-app="coursesApp">
+
+
+<div class="main">
+    <div ng-view></div>
+    <div class="container"></div>
+</div>
+<br><br>
+
+
+
+<!-- Modules -->
+<script>
+
+    var app = angular.module('coursesApp', ['ngRoute']); //ngRoute module routes app to different pages without reloading the entire application
+
+    //ngRoute
+    app.config(function ($routeProvider) {
+        $routeProvider
+            .when("/", {
+                controller: "homeController",
+                templateUrl: "courses/home.html"
+            })
+            .when("/:id", {
+                controller: "coursesController",
+                templateUrl: "courses/course.html"
+            })
+            .otherwise({
+                redirectTo: "/"
+            });
+    });
+
+    <!-- Controllers -->
+    app.controller('homeController', ['$scope', 'events', function ($scope, events) {
+        events.success(function (data) {
+            $scope.day = data;
+        });
+    }]);
+
+    app.controller('coursesController', ['$scope', 'events', '$routeParams', function ($scope, events, $routeParams) {
+        events.success(function (data) {
+            $scope.event = data.events[$routeParams.id];
+        })
+    }]);
+
+    <!-- Services -->
+    app.factory("events", ['$http', function ($http) {
+        return $http.get("https://raw.githubusercontent.com/weiyikong/fun/master/test.json")
+            .success(function (data) { return data; })
+            .error(function (err) { return err; });
+    }]);
+</script>
+
+
+</body>
+</html>
