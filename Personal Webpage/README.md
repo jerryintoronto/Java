@@ -1,4 +1,4 @@
-#Version 3 (current): 
+#Version 3: 
 
 www.jerrykong.ca
 
@@ -13,3 +13,7 @@ http://jerrykong.ca/courses
 The website is slowing coming into shape. I would like to improve on the loading page and a few other things. <br> 
 
 The color of the website is randomly generated everytime. The website stores up to 10 color themes. My eventual goal is to somehow implement machine learning such that the favourite color themes can found for each user. This would require an option for users to vote as their favourite color theme and slowly improving color selection based on selected favourite.    
+
+
+#Version 4: 
+Improved user experience, more angular.  
