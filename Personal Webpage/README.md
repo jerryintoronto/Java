@@ -1,8 +1,24 @@
-#Version 3: 
+#All versions are live:
+
+http://jerrykong.ca/legacy/Version1/
+<br> 
+http://jerrykong.ca/legacy/Version2/
+<br> 
+http://jerrykong.ca/legacy/Version3/
+<br> 
+
+<h3>Latest</h3>:
 
 www.jerrykong.ca
 
 
+
+
+
+#Change Log
+
+
+<h1>Version 3</h1>: 
 <h2>Angular Usage:</h2> 
 
 http://jerrykong.ca/projects <br> 
