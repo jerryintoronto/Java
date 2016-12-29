@@ -1,4 +1,3 @@
-
 var new_light_color;
 var new_light_color2;
 var new_dark_color;
@@ -10,12 +9,10 @@ var scrolls = 1;
 var activepage2 = true;
 
 
-
 function loadingcompleted() {
 //                 ---------------------
 //                 global variables
 //                 -------------------------
-
 
 
     setupmainpage()
@@ -48,7 +45,7 @@ function loadingcompleted() {
         $("#about, #title, .cd-date, h2").stop().css('color', 'white').animate({color: new_dark_color}, 1000);
         $(".cd-picture, #footer").stop().css({background: new_dark_color}, 1000);
         $(".cd-location").stop().css({background: new_dark_color2}, 1000);
-        $("a, .timeline-text").stop().css('color', 'white').animate({color: new_dark_color2}, 1000);
+        $(".link, .timeline-text").stop().css('color', 'white').animate({color: new_dark_color2}, 1000);
     }
 
 //                  -------------------
@@ -178,7 +175,7 @@ function loadingcompleted() {
         $("#about, #title, .cd-date, h2").stop().css({color: c1}, 1500);
         $(".cd-picture, #footer").stop().css({background: c1}, 1000);
         $(".cd-location").stop().css({background: c4}, 1000);
-        $("a, .timeline-text").stop().css({color: c4}, 500);
+        $(".link, .timeline-text").stop().css({color: c4}, 500);
         setTimeout(createHighChart(c3, c1, c2, c4), 500);
     }
 
@@ -295,7 +292,6 @@ function loadingcompleted() {
 }
 
 
-
 //                  ---------------
 //                  graph
 //                  ---------------
@@ -334,27 +330,26 @@ function createHighChart(c3, c1, c2, c4) {
         },
 
         series: [{
-            name: 'Future Gain',
-            data: [4, 5, 7, 9],
+            name: 'Hope to Learn',
+            data: [4, 5, 7],
             stack: 'a',
             color: c1
 //                        new_dark_color
         }, {
-            name: 'Current Self Evaluation',
-            data: [6, 5, 3, 1],
+            name: 'Self Evaluation',
+            data: [6, 5, 3],
             stack: 'a',
             color: c2
 //                                new_light_color
         }, {
             name: 'Interest',
-            data: [10, 10, 10, 10],
+            data: [10, 10, 10],
             stack: 'b',
             color: c4
 //                                new_dark_color2
         }]
     })
 }
-
 
 
 function animatetimeline() {
