@@ -507,7 +507,7 @@
       <workItem from="1482935117572" duration="7626000" />
       <workItem from="1482943217502" duration="5891000" />
       <workItem from="1482968701905" duration="4484000" />
-      <workItem from="1483021487744" duration="8834000" />
+      <workItem from="1483021487744" duration="8471000" />
     </task>
     <task id="LOCAL-00001" summary="commit from webstorm">
       <created>1481906358857</created>
@@ -520,7 +520,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123382000" />
+    <option name="totallyTimeSpent" value="123019000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="3026" height="1946" extended-state="6" />
