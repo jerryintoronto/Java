@@ -17,6 +17,9 @@ www.jerrykong.ca
 
 #Change Log
 
+<h1>Version 2:</h1> 
+Complete overhaul of V1<br> 
+
 
 <h1>Version 3:</h1> 
 <h2>Angular Usage:</h2> 
