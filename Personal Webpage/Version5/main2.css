@@ -1,0 +1,106 @@
+/*general*/
+
+#main, .secret {
+    display: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+@media (min-width: 320px) {
+    #title {
+        font-size: 43px;
+    }
+}
+
+@media (min-width: 1025px) {
+    #title {
+        font-size: 130px;
+        cursor : pointer ;
+    }
+}
+
+html, body { max-width: 100%; overflow-x: hidden; }
+
+/*--------------------------*/
+
+
+/*top bar*/
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    cursor: pointer;
+}
+
+.flex-item {
+    background: transparent;
+    padding: 5px;
+    width: 10%;
+    height: 10px;
+}
+
+.block {
+    background: yellow;
+    height: 10%;
+    width: 0;
+}
+
+
+/*-------------------------*/
+
+
+/*side nav*/
+.main {
+    margin-left: 150px;
+}
+
+#sidenav {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    width: 150px;
+}
+
+#sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: ghostwhite;
+    display: block;
+    transition: 0.3s
+}
+
+#sidenav a:hover, .offcanvas a:focus {
+    color: #f1f1f1;
+}
+
+#sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#mainmenu {
+    transition: margin-left .5s;
+    padding: 16px;
+    position: absolute;
+    left: 0
+}
+

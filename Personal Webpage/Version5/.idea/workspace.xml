@@ -1,17 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AnalysisUIOptions">
-    <option name="SCOPE_TYPE" value="3" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5003a88b-e20c-41f6-8e63-902d9aff1c46" name="Default" comment="">
+    <list default="true" id="baa38ebb-da62-4bc5-a413-92d2db961e9f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../AngularSPA/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../AngularSPA/Normalize.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../AngularSPA/chartist.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../AngularSPA/chartlist.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../AngularSPA/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../AngularSPA/spa.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular/AngularSPA/js/angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery-3.1.1.min.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Version3/.idea/Version3.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Version3/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Version3/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Version3/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/Version3.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/courses.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/courses/course.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/courses/home.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/dice.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/http.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/projects.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/projects/bot.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/projects/img/coding.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/projects/img/drawingchat.PNG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/projects/img/personweb.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/projects/img/recursion.PNG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/projects/img/schoolweb.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/projects/img/tutorial.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/projects/top.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/route.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/contact.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/highcharts.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/Chart.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/jquery.timelify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/modernizr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/nanobar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/timeline.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/typed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/legacy/angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/angular/Chart.min.js" afterPath="$PROJECT_DIR$/../../AngularSPA/Chart.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/angular/angular-chart.js" afterPath="$PROJECT_DIR$/../../AngularSPA/angular-chart.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/../../AngularSPA/bootstrap.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/main2.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/jquery-3.1.1.min.js" afterPath="$PROJECT_DIR$/../../AngularSPA/jquery-3.1.1.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/jquery-ui.min.js" afterPath="$PROJECT_DIR$/jquery-ui.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/main2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Version4/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Version4/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/courses/course.html" afterPath="$PROJECT_DIR$/angular/courses/course.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/http.html" afterPath="$PROJECT_DIR$/angular/http.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/index.html" afterPath="$PROJECT_DIR$/angular/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/projects.html" afterPath="$PROJECT_DIR$/angular/projects.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,104 +79,32 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="804">
-              <caret line="230" column="29" lean-forward="false" selection-start-line="230" selection-start-column="29" selection-end-line="230" selection-end-column="29" />
+            <state relative-caret-position="354">
+              <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
               <folding>
-                <element signature="e#2134#2141#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#11;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/main.css">
+      <file leaf-file-name="main2.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="80" column="17" lean-forward="false" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
+            <state relative-caret-position="-3663">
+              <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="courses.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/angular/courses.html">
+      <file leaf-file-name="main2.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="9" column="44" lean-forward="false" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+            <state relative-caret-position="672">
+              <caret line="80" column="11" lean-forward="false" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="course.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular/courses/course.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5577">
-              <caret line="169" column="36" lean-forward="false" selection-start-line="169" selection-start-column="36" selection-end-line="169" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="projects.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular/projects.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="191" column="20" lean-forward="false" selection-start-line="191" selection-start-column="20" selection-end-line="191" selection-end-column="20" />
-              <folding>
-                <element signature="e#1722#1729#0" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contact.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="168" column="19" lean-forward="false" selection-start-line="168" selection-start-column="19" selection-end-line="168" selection-end-column="19" />
-              <folding>
-                <element signature="e#2600#2607#0" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="http.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular/http.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-21">
-              <caret line="22" column="64" lean-forward="false" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1002">
-              <caret line="143" column="36" lean-forward="false" selection-start-line="143" selection-start-column="36" selection-end-line="143" selection-end-column="36" />
-              <folding>
-                <element signature="e#1883#1890#0" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -139,53 +114,50 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>30</find>
-      <find>date</find>
-      <find>sidema</find>
-      <find>chart</find>
-      <find>main.css</find>
-      <find>list</find>
-      <find>titlr</find>
-      <find>style</find>
-      <find>h1</find>
-      <find>lazy</find>
-      <find>linked</find>
-      <find>angular</find>
-      <find>body</find>
-      <find>main</find>
-      <find>typed</find>
-      <find>wrap</find>
-      <find>closed</find>
-      <find>openNav</find>
-      <find>my pro</find>
-      <find>High</find>
-      <find>open</find>
-      <find>a {</find>
-      <find>s</find>
-      <find>&quot;a</find>
-      <find>side</find>
-      <find>create</find>
+      <find>changeallscrolling</find>
+      <find>timeline</find>
+      <find>run</find>
+      <find>.link</find>
+      <find>.block</find>
       <find>high</find>
-      <find>a</find>
-      <find>scrolldown</find>
-      <find>backtop</find>
+      <find>create</find>
+      <find>c</find>
+      <find>creat</find>
+      <find>animatetime</find>
+      <find>angular</find>
+      <find>af</find>
+      <find>topbar</find>
+      <find>sidenav</find>
+      <find>Normalize.css</find>
+      <find>.css</find>
+      <find>setup</find>
+      <find>hover</find>
+      <find>css</find>
+      <find>bootstrap</find>
+      <find>sidenav a</find>
+      <find>save</find>
+      <find>white</find>
+      <find>siden</find>
+      <find>#sidenav</find>
+      <find>body</find>
+      <find>moder</find>
+      <find>ui</find>
+      <find>change t</find>
+      <find>title</find>
     </findStrings>
     <replaceStrings>
-      <replace>velocity</replace>
-      <replace>animate</replace>
-      <replace>new_light_color2</replace>
-      <replace>changeallcolors</replace>
-      <replace>pre_light_color2</replace>
-      <replace>new_li</replace>
-      <replace>coursesC</replace>
+      <replace>test2</replace>
+      <replace>img</replace>
+      <replace>.main</replace>
+      <replace>changeall</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -194,44 +166,30 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/html/timeline.html" />
-        <option value="$PROJECT_DIR$/courses/views/day.html" />
-        <option value="$PROJECT_DIR$/angular/angular-chart.js" />
-        <option value="$PROJECT_DIR$/angular/hideandshow.html" />
-        <option value="$PROJECT_DIR$/courses/courses.html" />
-        <option value="$PROJECT_DIR$/angular/angular-route.min.js" />
-        <option value="$PROJECT_DIR$/courses/index.html" />
+        <option value="$PROJECT_DIR$/angular/courses/course.html" />
+        <option value="$PROJECT_DIR$/test.json" />
         <option value="$PROJECT_DIR$/angular/courses/home.html" />
         <option value="$PROJECT_DIR$/angular/test.html" />
-        <option value="$PROJECT_DIR$/angular/ng4/animations.css" />
-        <option value="$PROJECT_DIR$/angular/ng4/chapter.html" />
-        <option value="$PROJECT_DIR$/angular/mystle.css" />
-        <option value="$PROJECT_DIR$/angular/ng3.html" />
-        <option value="$PROJECT_DIR$/angular/ng5.html" />
-        <option value="$PROJECT_DIR$/angular/ng4/ng4.html" />
-        <option value="$PROJECT_DIR$/angular/ng4.html" />
-        <option value="$PROJECT_DIR$/projects/index.html" />
-        <option value="$PROJECT_DIR$/angular/projects/appInfo.html" />
-        <option value="$PROJECT_DIR$/angular/projects/installApp.html" />
-        <option value="$PROJECT_DIR$/angular/route.html" />
-        <option value="$PROJECT_DIR$/angular/projects/top.html" />
-        <option value="$USER_HOME$/Downloads/nanobar-master/nanobar-master/demos/demos.html" />
-        <option value="$PROJECT_DIR$/css/page2.css" />
-        <option value="$USER_HOME$/Downloads/YouTubeLeftSideMenu/YouTubeLeftSideMenu/index.html" />
-        <option value="$PROJECT_DIR$/demos.html" />
-        <option value="$PROJECT_DIR$/menu.html" />
         <option value="$PROJECT_DIR$/angular/courses.html" />
-        <option value="$PROJECT_DIR$/angular/style.css" />
-        <option value="$PROJECT_DIR$/angular/dice.html" />
+        <option value="$PROJECT_DIR$/js/shared.js" />
+        <option value="$PROJECT_DIR$/html/sidemenu.html" />
+        <option value="$PROJECT_DIR$/angular/AngularSPA/view/page1.js" />
         <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/angular/projects/top.html" />
+        <option value="$PROJECT_DIR$/angular/projects/bot.html" />
         <option value="$PROJECT_DIR$/angular/projects.html" />
-        <option value="$PROJECT_DIR$/contact.html" />
-        <option value="$PROJECT_DIR$/angular/http.html" />
-        <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/angular/index.html" />
-        <option value="$PROJECT_DIR$/angular/courses/course.html" />
+        <option value="$PROJECT_DIR$/contact.html" />
+        <option value="$PROJECT_DIR$/css/sidemenu.css" />
+        <option value="$PROJECT_DIR$/css/Normalize.css" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/angular/AngularSPA/js/angular.js" />
+        <option value="$PROJECT_DIR$/spa2.html" />
+        <option value="$PROJECT_DIR$/angular/AngularSPA/spa.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/angular2.js" />
+        <option value="$PROJECT_DIR$/main2.css" />
+        <option value="$PROJECT_DIR$/main2.js" />
       </list>
     </option>
   </component>
@@ -265,67 +223,27 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Version4" />
+              <option name="myItemId" value="Version5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Version4" />
+              <option name="myItemId" value="Version5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Version4" />
+              <option name="myItemId" value="Version5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Version4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Version4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Version4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Version4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Version4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Version4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Version4" />
+              <option name="myItemId" value="Version5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -333,73 +251,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Version4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Version4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="courses" />
+              <option name="myItemId" value="AngularSPA" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Version4" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-    <property name="restartRequiresConfirmation" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="liveEdit" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\J\Documents\GitHub\Projects\Personal Webpage\Version4" />
-      <recent name="C:\Users\J\Documents\GitHub\Projects\Personal Webpage\Version4\js" />
-      <recent name="C:\Users\J\Documents\GitHub\Projects\Personal Webpage\Version3" />
-      <recent name="C:\Users\J\Documents\GitHub\Projects\Personal Webpage\Version3\legacy" />
-      <recent name="C:\Users\J\Documents\GitHub\Projects\Personal Webpage\Version3\angular" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\J\Documents\GitHub\Projects\Personal Webpage\Version4\js" />
-      <recent name="C:\Users\J\Documents\GitHub\Projects\Personal Webpage\Version3\js" />
-      <recent name="C:\Users\J\Documents\GitHub\Projects\Personal Webpage\Version3\css" />
-      <recent name="C:\Users\J\Documents\GitHub\Projects\Personal Webpage\Version3" />
-      <recent name="C:\Users\J\Documents\GitHub\Projects\Personal Webpage\Version3\angular" />
+      <recent name="C:\Users\J\Documents\GitHub\Projects\Personal Webpage\Version5" />
+      <recent name="C:\Users\J\Documents\GitHub\Projects\Personal Webpage\Version5\angular" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\J\Documents\GitHub\Projects\Personal Webpage\Version5" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
-    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Version3/courses/index.html">
+    <configuration default="false" name="spa.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Version5/angular/AngularSPA/spa.html">
       <method />
     </configuration>
-    <configuration default="false" name="courses.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Version3/angular/courses.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="dice.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Version3/angular/dice.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="home.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Version3/angular/courses/home.html">
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Version5/index.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -461,18 +346,14 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.courses.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.dice.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.home.html" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.spa.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
     </list>
     <recent_temporary>
-      <list size="4">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.courses.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.home.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.dice.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.spa.html" />
       </list>
     </recent_temporary>
   </component>
@@ -484,83 +365,55 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5003a88b-e20c-41f6-8e63-902d9aff1c46" name="Default" comment="" />
-      <created>1481852221433</created>
+      <changelist id="baa38ebb-da62-4bc5-a413-92d2db961e9f" name="Default" comment="" />
+      <created>1483030564567</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1481852221433</updated>
-      <workItem from="1481852222829" duration="1094000" />
-      <workItem from="1481853400139" duration="2714000" />
-      <workItem from="1481898174886" duration="8209000" />
-      <workItem from="1481908081770" duration="3281000" />
-      <workItem from="1481926530949" duration="1443000" />
-      <workItem from="1481981130651" duration="13531000" />
-      <workItem from="1482158447821" duration="16520000" />
-      <workItem from="1482246167389" duration="32250000" />
-      <workItem from="1482347079418" duration="6747000" />
-      <workItem from="1482354862390" duration="799000" />
-      <workItem from="1482355904439" duration="14000" />
-      <workItem from="1482355921387" duration="6241000" />
-      <workItem from="1482499482072" duration="1719000" />
-      <workItem from="1482770296937" duration="211000" />
-      <workItem from="1482851423571" duration="1774000" />
-      <workItem from="1482935117572" duration="7626000" />
-      <workItem from="1482943217502" duration="5891000" />
-      <workItem from="1482968701905" duration="4484000" />
-      <workItem from="1483021487744" duration="8471000" />
+      <updated>1483030564567</updated>
+      <workItem from="1483030566643" duration="605000" />
+      <workItem from="1483034904921" duration="3903000" />
+      <workItem from="1483049718100" duration="2466000" />
+      <workItem from="1483374107699" duration="5477000" />
+      <workItem from="1483459698527" duration="12000" />
+      <workItem from="1483460119511" duration="360000" />
+      <workItem from="1483461311526" duration="723000" />
+      <workItem from="1483563443217" duration="634000" />
+      <workItem from="1483564172242" duration="33000" />
+      <workItem from="1483564276527" duration="181000" />
+      <workItem from="1483576352104" duration="1375000" />
+      <workItem from="1483583929427" duration="12178000" />
+      <workItem from="1483712141197" duration="40168000" />
+      <workItem from="1483934406871" duration="8147000" />
+      <workItem from="1483975454097" duration="6081000" />
+      <workItem from="1483981608818" duration="1316000" />
+      <workItem from="1483988749959" duration="1815000" />
     </task>
-    <task id="LOCAL-00001" summary="commit from webstorm">
-      <created>1481906358857</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1481906358857</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123019000" />
+    <option name="totallyTimeSpent" value="85474000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="3026" height="1946" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24966666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295901" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967105" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295901" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24966666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -568,248 +421,121 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit from webstorm" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit from webstorm" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/legacy/views/day.html" />
-    <entry file="file://$PROJECT_DIR$/legacy/views/event.html" />
-    <entry file="file://$PROJECT_DIR$/legacy/js/app.js" />
-    <entry file="file://$PROJECT_DIR$/legacy/angular.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/legacy/index.html" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/block.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1353">
-          <caret line="41" column="16" lean-forward="false" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/test.html" />
-    <entry file="file://$PROJECT_DIR$/angular/ng4/script.js" />
-    <entry file="file://$PROJECT_DIR$/angular/ng4/animations.css" />
-    <entry file="file://$PROJECT_DIR$/angular/ng4/chapter.html" />
-    <entry file="file://$PROJECT_DIR$/angular/ng4/ng5.html" />
-    <entry file="file://$PROJECT_DIR$/angular/ng4/courses.html" />
-    <entry file="file://$PROJECT_DIR$/angular/mystle.css" />
-    <entry file="file://$PROJECT_DIR$/angular/ng4/book.html" />
-    <entry file="file://$PROJECT_DIR$/angular/ng4/ng3.html" />
-    <entry file="file://$PROJECT_DIR$/angular/ng4/ng4.html" />
-    <entry file="file://$PROJECT_DIR$/projects/js/directives/appInfo.js" />
-    <entry file="file://$PROJECT_DIR$/projects/js/controllers/MainController.js" />
-    <entry file="file://$PROJECT_DIR$/projects/js/directives/installApp.js" />
-    <entry file="file://$PROJECT_DIR$/projects/js/app.js" />
-    <entry file="file://$PROJECT_DIR$/angular/projects/css/main.css" />
-    <entry file="file://$PROJECT_DIR$/angular/angular.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/projects/bot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/projects/top.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/nanobar.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/route.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2244">
-          <caret line="68" column="72" lean-forward="false" selection-start-line="68" selection-start-column="72" selection-end-line="68" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/legacy/angular.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/page2.css" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/sectional.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demos.html" />
-    <entry file="file://$USER_HOME$/Downloads/YouTubeLeftSideMenu/YouTubeLeftSideMenu/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menu.html" />
-    <entry file="file://$PROJECT_DIR$/angular/style.css" />
-    <entry file="file://$PROJECT_DIR$/js/lazyload.min.js" />
-    <entry file="file://$PROJECT_DIR$/js/jquery-ui.min.css" />
-    <entry file="file://$PROJECT_DIR$/js/jquery-ui.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/Chart.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/courses/home.html">
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/angular/index.html" />
+    <entry file="file://$PROJECT_DIR$/angular/AngularSPA/spa.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="4" column="37" lean-forward="false" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding>
+            <element signature="n#script#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/phrase.rnc">
+    <entry file="file://$PROJECT_DIR$/angular/index.html" />
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/angular/index.html" />
+    <entry file="file://$PROJECT_DIR$/angular/test.html" />
+    <entry file="file://$PROJECT_DIR$/angular/courses.html" />
+    <entry file="file://$PROJECT_DIR$/angular/projects.html" />
+    <entry file="file://$PROJECT_DIR$/angular/courses/course.html" />
+    <entry file="file://$PROJECT_DIR$/angular/projects/bot.html" />
+    <entry file="file://$PROJECT_DIR$/angular/courses/home.html" />
+    <entry file="file://$PROJECT_DIR$/angular/index.html" />
+    <entry file="file://$PROJECT_DIR$/angular/test.html" />
+    <entry file="file://$PROJECT_DIR$/angular/courses.html" />
+    <entry file="file://$PROJECT_DIR$/angular/route.html" />
+    <entry file="file://$PROJECT_DIR$/angular/courses/course.html" />
+    <entry file="file://$PROJECT_DIR$/angular/courses/home.html" />
+    <entry file="file://$PROJECT_DIR$/test.json" />
+    <entry file="file://$PROJECT_DIR$/test.json" />
+    <entry file="file://$PROJECT_DIR$/angular/route.html" />
+    <entry file="file://$PROJECT_DIR$/angular/courses/home.html" />
+    <entry file="file://$PROJECT_DIR$/angular/courses/course.html" />
+    <entry file="file://$PROJECT_DIR$/html/sidemenu.html" />
+    <entry file="file://$PROJECT_DIR$/js/shared.js" />
+    <entry file="file://$PROJECT_DIR$/angular/test.html" />
+    <entry file="file://$PROJECT_DIR$/angular/AngularSPA/view/page1.js" />
+    <entry file="file://$PROJECT_DIR$/angular/projects/top.html" />
+    <entry file="file://$PROJECT_DIR$/angular/courses.html" />
+    <entry file="file://$PROJECT_DIR$/angular/projects/bot.html" />
+    <entry file="file://$PROJECT_DIR$/angular/projects.html" />
+    <entry file="file://$PROJECT_DIR$/angular/index.html" />
+    <entry file="file://$PROJECT_DIR$/contact.html" />
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/js/main.js" />
+    <entry file="file://$PROJECT_DIR$/test.html" />
+    <entry file="file://$PROJECT_DIR$/css/sidemenu.css" />
+    <entry file="file://$PROJECT_DIR$/js/utils.js" />
+    <entry file="file://$PROJECT_DIR$/css/Normalize.css" />
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css" />
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="132">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular/dice.html">
+    <entry file="file://$PROJECT_DIR$/angular/AngularSPA/js/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="260" column="6" lean-forward="false" selection-start-line="260" selection-start-column="6" selection-end-line="260" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structure.JPG" />
+    <entry file="file://$PROJECT_DIR$/angular/AngularSPA/spa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <folding>
+            <element signature="n#script#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="168" column="19" lean-forward="false" selection-start-line="168" selection-start-column="19" selection-end-line="168" selection-end-column="19" />
-          <folding>
-            <element signature="e#2600#2607#0" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/http.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="22" column="64" lean-forward="false" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
+          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular/projects.html">
+    <entry file="file://$PROJECT_DIR$/main2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="191" column="20" lean-forward="false" selection-start-line="191" selection-start-column="20" selection-end-line="191" selection-end-column="20" />
-          <folding>
-            <element signature="e#1722#1729#0" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5577">
-          <caret line="169" column="36" lean-forward="false" selection-start-line="169" selection-start-column="36" selection-end-line="169" selection-end-column="36" />
+        <state relative-caret-position="672">
+          <caret line="80" column="11" lean-forward="false" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1002">
-          <caret line="143" column="36" lean-forward="false" selection-start-line="143" selection-start-column="36" selection-end-line="143" selection-end-column="36" />
-          <folding>
-            <element signature="e#1883#1890#0" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="804">
-          <caret line="230" column="29" lean-forward="false" selection-start-line="230" selection-start-column="29" selection-end-line="230" selection-end-column="29" />
+        <state relative-caret-position="354">
+          <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
           <folding>
-            <element signature="e#2134#2141#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#11;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
+    <entry file="file://$PROJECT_DIR$/main2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="80" column="17" lean-forward="false" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/courses/course.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/courses.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="9" column="44" lean-forward="false" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        <state relative-caret-position="-3663">
+          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
           <folding />
         </state>
       </provider>
