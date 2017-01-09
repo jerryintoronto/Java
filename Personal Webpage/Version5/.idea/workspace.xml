@@ -2,63 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baa38ebb-da62-4bc5-a413-92d2db961e9f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../AngularSPA/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../AngularSPA/Normalize.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../AngularSPA/chartist.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../AngularSPA/chartlist.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../AngularSPA/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../AngularSPA/spa.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular/AngularSPA/js/angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery-3.1.1.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Version3/.idea/Version3.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Version3/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Version3/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Version3/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/Version3.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/courses.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/courses/course.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/courses/home.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/dice.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/http.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/projects.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/projects/bot.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/projects/img/coding.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/projects/img/drawingchat.PNG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/projects/img/personweb.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/projects/img/recursion.PNG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/projects/img/schoolweb.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/projects/img/tutorial.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/projects/top.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/route.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/contact.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/highcharts.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/Chart.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/jquery.timelify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/modernizr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/nanobar.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/timeline.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/typed.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/legacy/angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/angular/Chart.min.js" afterPath="$PROJECT_DIR$/../../AngularSPA/Chart.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/angular/angular-chart.js" afterPath="$PROJECT_DIR$/../../AngularSPA/angular-chart.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/../../AngularSPA/bootstrap.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/main2.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/jquery-3.1.1.min.js" afterPath="$PROJECT_DIR$/../../AngularSPA/jquery-3.1.1.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/jquery-ui.min.js" afterPath="$PROJECT_DIR$/jquery-ui.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/main2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Version4/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Version4/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Version4/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Version4/Resume_Jerry_Kong.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Version4/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resume_Jerry_Kong.pdf" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../README.md" afterPath="$PROJECT_DIR$/../README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -92,8 +42,8 @@
       <file leaf-file-name="main2.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3663">
-              <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+            <state relative-caret-position="528">
+              <caret line="145" column="59" lean-forward="false" selection-start-line="145" selection-start-column="59" selection-end-line="145" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -386,18 +336,18 @@
       <workItem from="1483934406871" duration="8147000" />
       <workItem from="1483975454097" duration="6081000" />
       <workItem from="1483981608818" duration="1316000" />
-      <workItem from="1483988749959" duration="1815000" />
+      <workItem from="1483988749959" duration="2015000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85474000" />
+    <option name="totallyTimeSpent" value="85674000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="-13" width="3026" height="1946" extended-state="6" />
-    <editor active="true" />
+    <frame x="-13" y="-13" width="3026" height="1946" extended-state="7" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -534,8 +484,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3663">
-          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        <state relative-caret-position="528">
+          <caret line="145" column="59" lean-forward="false" selection-start-line="145" selection-start-column="59" selection-end-line="145" selection-end-column="59" />
           <folding />
         </state>
       </provider>
