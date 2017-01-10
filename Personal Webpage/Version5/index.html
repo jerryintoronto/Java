@@ -34,24 +34,26 @@
 <div id="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div style="top:40%; position:relative; transform: translateY(-50%);">
-    <div class="sidenav">
-        <a href="#/home">Home</a>
-    </div>
-    <div class="sidenav">
-        <a href="#/page1">Projects</a>
-    </div>
-    <div class="sidenav">
-        <a href="#/page2">About</a>
-    </div>
-    <div class="sidenav">
-        <a href="#/page3">Contact</a>
-    </div>
+        <div class="sidenav">
+            <a href="#/home">Skills</a>
+        </div>
+        <div class="sidenav">
+            <a href="#/page1">Projects</a>
+        </div>
+        <div class="sidenav">
+            <a href="#/page2">About</a>
+        </div>
+        <div class="sidenav">
+            <a href="#/page3">Contact</a>
+        </div>
 
     </div>
 </div>
 
 <!--constant header-->
 <div class="main" ng-controller="header">
+
+    <!--top bar-->
     <ul class="flex-container row1">
         <li class="flex-item"></li>
         <li class="flex-item"></li>
@@ -122,14 +124,16 @@
     <!--side menu open-->
 
     <div id="mainmenu">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+        <span style="font-size:55px;cursor:pointer" onclick="openNav()">&#9776; </span>
     </div>
     <br>
 
     <!--title and intro-->
     <div class="text-center">
         <h1 id="title">Jerry Kong</h1>
-        <button class='btn btn-default' ng-click="a()">Change Color Theme</button>
+        <div id = bar>
+            <button class='btn btn-default' ng-click="a()"> &#9777</button>
+        </div>
     </div>
 
     <!--main content placeholder-->
@@ -141,18 +145,16 @@
 <script type="text/ng-template" id="home.html">
     <div class="row text-center">
         <div>
-            <h1>
-                <div class='block'>ANGULAR</div>
-                <div class='block'>BOOTSTRAP</div>
-                <div class='block'>jQuery</div>
-                <div class='block'>CSS</div>
-                <div class='block'>HTML</div>
-                <div class='block'>WORDPRESSCMS</div>
-                <div class='block'>JAVA</div>
-                <div class='block'>SQL</div>
-                <div class='block'>RECURSION</div>
-                <div class='block'>C</div>
-            </h1>
+                <div class='block padding'><h1>ANGULAR</h1></div>
+                <div class='block padding'><h1>BOOTSTRAP</h1></div>
+                <div class='block padding'><h1>jQuery</h1></div>
+                <div class='block padding'><h1>JAVA</h1></div>
+                <div class='block padding'>CSS</div>
+                <div class='block padding'>HTML</div>
+                <div class='block padding'>WORDPRESSCMS</div>
+                <div class='block padding'>SQL</div>
+                <div class='block padding'>RECURSION</div>
+                <div class='block padding'>C</div>
         </div>
     </div>
 </script>
@@ -181,17 +183,18 @@
 <!--about template-->
 <script type="text/ng-template" id="page2.html">
     <div class="row text-center">
-        <h1>
             <div class='block'>
-                <pre>
-     I am a recent grad from University of Windsor...
-     I did a fast track program that only took one year.
-     I have been since self learning web dev, it's pretty fun..
-     I want to build awesome progressive web applications
-                </pre>
-
+                <h3>
+                     Recent grad from University of Windsor, computer science with distinction. Currently self learning web dev, hoping to build great web/non-web applications.
+                </h3>
             </div>
-        </h1>
+            <div class='block'>
+                <h3>
+                     Self learner, life-long learner, future thinker. Make the world a better place through technology.
+                </h3>
+            </div>
+
+
     </div>
 </script>
 
@@ -199,12 +202,12 @@
 <script type="text/ng-template" id="page3.html">
     <div class="row text-center">
         <h1>
-            <div class='block'><a class="button btn btn-info btn-lg" href="https://ca.linkedin.com/in/jerrywkong">My
-                LinkedIn Page</a></div>
-            <div class='block'><a class="button btn btn-info btn-lg" href="https://github.com/weiyikong">My Github</a>
+            <div class='block'><a class="button btn btn-info btn-lg" href="https://ca.linkedin.com/in/jerrywkong">
+                LinkedIn &#8599;</a></div>
+            <div class='block'><a class="button btn btn-info btn-lg" href="https://github.com/weiyikong">Github &#8599;</a>
             </div>
-            <div class='block'><a class="button btn btn-info btn-lg" href="Resume_Jerry_Kong.pdf" download>Download My
-                Resume</a></div>
+            <div class='block'><a class="button btn btn-info btn-lg" href="Resume_Jerry_Kong.pdf" download>
+                Resume &#8595;</a></div>
         </h1>
     </div>
 </script>

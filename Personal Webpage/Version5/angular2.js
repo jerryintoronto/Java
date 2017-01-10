@@ -43,17 +43,21 @@ app.controller('header', function($scope){
 
 app.controller('homeController', function ($scope) {
     startanimation();
+    setTimeout(changeallfromtitle, 300);
+
 });
 
 app.controller('page1Controller', function ($scope) {
     startanimation();
-
+    setTimeout(changeallfromtitle, 300);
 });
 
 app.controller('page2Controller', function ($scope) {
     startanimation();
+    setTimeout(changeallfromtitle, 300);
 });
 
 app.controller('page3Controller', function ($scope) {
     startanimation();
+    setTimeout(changeallfromtitle, 300);
 });

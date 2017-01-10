@@ -11,18 +11,38 @@
 
 @media (min-width: 320px) {
     #title {
-        font-size: 43px;
+        display: none;
+    }
+
+    #sidenav {
+        width: 28px;
+    }
+
+    .main {
+        margin-left: 28px;
     }
 }
+
 
 @media (min-width: 1025px) {
     #title {
         font-size: 130px;
         cursor : pointer ;
+        display: block;
+    }
+
+    #sidenav {
+        width: 28px;
+    }
+
+    .main {
+        margin-left: 28px;
     }
 }
 
-html, body { max-width: 100%; overflow-x: hidden; }
+html, body {
+    max-width: 100%;
+    overflow: hidden; }
 
 /*--------------------------*/
 
@@ -77,12 +97,14 @@ html, body { max-width: 100%; overflow-x: hidden; }
 }
 
 #sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 10px;
     text-decoration: none;
     font-size: 25px;
     color: ghostwhite;
     display: block;
-    transition: 0.3s
+    transition: 0.3s;
+
+
 }
 
 #sidenav a:hover, .offcanvas a:focus {
@@ -93,14 +115,26 @@ html, body { max-width: 100%; overflow-x: hidden; }
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 66px;
     margin-left: 50px;
 }
 
 #mainmenu {
     transition: margin-left .5s;
-    padding: 16px;
+    padding-left: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
     position: absolute;
     left: 0
 }
+
+
+.block { padding: 50px; }
+
+.padding { padding: 5px; }
+
+bar {
+    font-color: white;
+}
+
 

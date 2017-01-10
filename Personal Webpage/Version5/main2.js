@@ -13,48 +13,33 @@ function setup() {
     setTimeout(loadingcompleted, 200); //js/main.js
 
     function loadingcompleted() {
-        setupintial();
-        generalhovereffects();
+        changebackground();
+        savecolors();
+        topbar();
         setuptopbar();
         setupsidenav();
+
+
+        $("#title").click(function () {
+            var cur = $(this).css('color');
+            $(this).css({color: 'white'});
+            changeallfromtitle();
+        });
+
     }
-}
-
-// directive contstructor
-function setupintial() {
-
-
-
-    changebackground();
-    changeforegroundcolor();
-    savecolors();
-    topbar();
-
-    // $("body").animate({backgroundColor: new_light_color}, 1000);
-
-}
-
-function generalhovereffects() {
-    //clicking on my name
-    $("#title").click(function () {
-        var cur = $(this).css('color');
-        $(this).css({color: 'white'});
-        changeallfromtitle();
-    });
 }
 
 
 function changeallfromtitle() {
-//                        this is triggered through scrolling
 
     changebackground();
-    changeforegroundcolor();
 
     numofc++;
     if (numofc == 11)
         numofc = 1; //start over
 
     savecolors();
+
     topbar();
 
     if (numofcmax < 10)
@@ -63,22 +48,15 @@ function changeallfromtitle() {
 
 
 function changebackground() {
-    new_light_color = 'rgb(' + (Math.floor((256 - 229) * Math.random()) + 230) + ',' + (Math.floor((256 - 229) * Math.random()) + 230) + ',' + (Math.floor((256 - 229) * Math.random()) + 230) + ')';
-    new_light_color2 = 'rgb(' + (Math.floor((256 - 229) * Math.random()) + 230) + ',' + (Math.floor((256 - 229) * Math.random()) + 230) + ',' + (Math.floor((256 - 229) * Math.random()) + 230) + ')';
-    $("body").stop().animate({backgroundColor: new_light_color}, 1000);
-}
-
-function changeforegroundcolor() {
     var min = 70;
     var range = 70;
+    new_light_color = 'rgb(' + (Math.floor((256 - 229) * Math.random()) + 220) + ',' + (Math.floor((256 - 229) * Math.random()) + 230) + ',' + (Math.floor((256 - 229) * Math.random()) + 230) + ')';
+    new_light_color2 = 'rgb(' + (Math.floor((256 - 229) * Math.random()) + 230) + ',' + (Math.floor((256 - 229) * Math.random()) + 230) + ',' + (Math.floor((256 - 229) * Math.random()) + 230) + ')';
     new_dark_color = 'rgb(' + (Math.floor((range) * Math.random()) + min ) + ',' + (Math.floor((range) * Math.random()) + min - 30 ) + ',' + (Math.floor((range ) * Math.random()) + min - 70 ) + ')';
     new_dark_color2 = 'rgb(' + (Math.floor((range) * Math.random()) + min ) + ',' + (Math.floor((range) * Math.random()) + min - 30) + ',' + (Math.floor((range ) * Math.random()) + min - 70 ) + ')';
-    animateforeground();
-}
-
-function animateforeground() {
+    $("body").stop().animate({backgroundColor: new_light_color}, 1000);
     $("#about, #title, h1, .cd-date, h2").stop().animate({color: new_dark_color}, 1000);
-    $("#sidenav").stop().css({background: new_dark_color}, 1000);
+    $("#sidenav, #bar").stop().css({background: new_dark_color}, 1000);
 }
 
 
@@ -127,7 +105,7 @@ function setuptopbar() {
         function changeallfromtopbar(c1, c2, c3, c4) {
             $("body").stop().animate({backgroundColor: c2}, 1000);
             $("#title, h1, h2").stop().css({color: c1}, 1500);
-            $("#sidenav").stop().css({background: c1}, 1000);
+            $("#sidenav, #bar").stop().css({background: c1}, 1000);
             $(".block").stop().css({color: c4}, 500);
         }
     }
@@ -140,7 +118,6 @@ function savecolors() {
     colors[numofc][2] = new_light_color2;
     colors[numofc][3] = new_dark_color2;
 }
-
 
 
 // top bar blinks(White) then changes to the generated color
@@ -180,13 +157,15 @@ function startanimation() {
     }
 }
 
+
 // sidenav
 function openNav() {
     document.getElementById("sidenav").style.width = "150px";
     $(".main").css({marginLeft: "150px"});
 }
+
 function closeNav() {
-    document.getElementById("sidenav").style.width = "10px";
+    document.getElementById("sidenav").style.width = "28px";
     $(".main").css({marginLeft: "0"});
 }
 
@@ -197,8 +176,6 @@ function setupsidenav() {
             $(this).css({background: 'transparent'})
         }
     );
-
-
 }
 
 
