@@ -54,7 +54,7 @@ function changebackground() {
     new_light_color2 = 'rgb(' + (Math.floor((256 - 229) * Math.random()) + 230) + ',' + (Math.floor((256 - 229) * Math.random()) + 230) + ',' + (Math.floor((256 - 229) * Math.random()) + 230) + ')';
     new_dark_color = 'rgb(' + (Math.floor((range) * Math.random()) + min ) + ',' + (Math.floor((range) * Math.random()) + min - 30 ) + ',' + (Math.floor((range ) * Math.random()) + min - 70 ) + ')';
     new_dark_color2 = 'rgb(' + (Math.floor((range) * Math.random()) + min ) + ',' + (Math.floor((range) * Math.random()) + min - 30) + ',' + (Math.floor((range ) * Math.random()) + min - 70 ) + ')';
-    $("body").stop().animate({backgroundColor: new_light_color}, 1000);
+    // $("body").stop().animate({backgroundColor: new_light_color}, 1000);
     $("#about, #title, h1, .cd-date, h2").stop().animate({color: new_dark_color}, 1000);
     $("#sidenav, #bar").stop().css({background: new_dark_color}, 1000);
 }
@@ -103,7 +103,7 @@ function setuptopbar() {
         }
 
         function changeallfromtopbar(c1, c2, c3, c4) {
-            $("body").stop().animate({backgroundColor: c2}, 1000);
+            // $("body").stop().animate({backgroundColor: c2}, 1000);
             $("#title, h1, h2").stop().css({color: c1}, 1500);
             $("#sidenav, #bar").stop().css({background: c1}, 1000);
             $(".block").stop().css({color: c4}, 500);
