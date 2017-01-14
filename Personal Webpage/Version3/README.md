@@ -1,7 +1,6 @@
 #Changes
 
 Added two angular subpages<br>
-Improved CSS/JS code organization and readibility <br>
-Added a mini 2nd page active when scrolled down <br>
+Added scrolled down show/hide effect via jQuery <br>
 Modified loading screen
 
