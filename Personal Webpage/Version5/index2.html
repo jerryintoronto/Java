@@ -29,25 +29,21 @@
 </head>
 
 <body>
-<!--side menu-->
-<div id="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div style="top:40%; position:relative; transform: translateY(-50%);">
-        <div class="sidenav">
-            <a href="#/home">Skills</a>
+<!--view-->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#/home"> Home </a>
         </div>
-        <div class="sidenav">
-            <a href="#/page1">Projects</a>
-        </div>
-        <div class="sidenav">
-            <a href="#/page2">About</a>
-        </div>
-        <div class="sidenav">
-            <a href="#/page3">Contact</a>
-        </div>
-
+        <ul class="nav navbar-nav">
+            <li><a href=#/1> Page 1</a></li>
+            <li><a href="#/2"> Page 2</a></li>
+            <li><a href="#/3"> Page 3 </a></li>
+            <li><a href="#/4"> Page 4 </a></li>
+        </ul>
     </div>
-</div>
+</nav>
+
 
 <!--constant header-->
 <div class="main" ng-controller="header">

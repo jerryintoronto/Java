@@ -1,10 +1,9 @@
 <!doctype html>
-<html ng-app="myApp">
+<html ng-app="myApp" xmlns="http://www.w3.org/1999/html">
 <head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
@@ -14,44 +13,37 @@
     <script src="Chart.min.js"></script>
     <script src="jquery-3.1.1.min.js"></script>
     <script src="angular-chart.js"></script>
-
     <link rel="stylesheet" href="chartlist.min.css">
     <link rel="stylesheet" href="normalize.css">
-
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-touch.js"></script>
     <script src="http://ui-grid.info/release/ui-grid.js"></script>
     <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid.css" type="text/css">
-
-
 </head>
 <body>
 
 
 <!--view-->
 
-<nav class="navbar navbar-inverse">
+<nav ng-controller="menuController" class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand"> Jerry's Angular SPA</a>
+            <a class="navbar-brand" href="../../index.html"> Jerry's Angular SPA</a>
         </div>
         <ul class="nav navbar-nav">
-            <li><a href="#/home">Home</a></li>
-            <li class="dropdown" style="cursor: pointer"><a class="dropdown-toggle" data-toggle="dropdown">Page 1 <span
-                    class="caret"></span></a>
-                <ul class="dropdown-menu">
+            <li><a href= {{a}}> {{aName}}</a></li>
+            <li class="dropdown" >
+                <a class="dropdown-toggle" data-toggle="dropdown" href= {{b}}> {{bName}}<span class="caret"></span> </a>
 
-                    <li><a href="#/">Page 1-1</a></li>
-                    <li><a href="#/page1-2">Page 1-2</a></li>
-                    <li><a href="#/page1-3">Page 1-3</a></li>
+                <ul class="dropdown-menu">
+                    <li><a href= {{b}}> {{bName}}</a></li>
+                    <li><a href= {{ba}}> {{baName}}</a></li>
+                    <li><a href= {{bb}}> {{bbName}}</a></li>
                 </ul>
             </li>
-            <li><a href="#/page2">Page 2</a></li>
-            <li><a href="#/page3">Page 3</a></li>
+            <li><a href={{c}}> {{cName}}</a></li>
+            <li><a href={{d}}> {{dName}}</a></li>
         </ul>
     </div>
 </nav>
@@ -63,33 +55,22 @@
 
 
 <!--home-->
-
 <script type="text/ng-template" id="home.html">
-
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <h1> {{name}} </h1>
-
-
             <p>
-
-
                 Hello,
                 <a href="#" tooltip-animation="false" uib-tooltip="Built via Angular 1.58!">This single page web
                     application</a>
-                is used to improve my angularJS skills.
+                is used to improve my angularJS and bootstrap skills.
 
                 <li>Home page implements a few selected features found on https://angular-ui.github.io/bootstrap/.
-                <li>Page 1 uses $HTTP to get JSON data and display them in a table.
-                <li>Page 2 has some form input fields.
-            <li>Page 3 is a small angular app that I had built before.
-
-
+                <li>Page 1-1,1-2,1-3 uses $HTTP to GET JSON data and other functions.
+                <li>Page 2 has some form input fields and other showcases.
+                <li>Page 3 is a small angular app.
             </p>
-
             <br>
-
-
             <div>
                 <pre>Date is: <em>{{dt | date:'fullDate' }}</em></pre>
                 <pre class="alert alert-info">Time is: <em>{{mytime  | date:'shortTime' }}</em></pre>
@@ -107,28 +88,39 @@
 
 
 <!--page1-->
-
 <script type="text/ng-template" id="pages/page1.html">
     <div class="row">
-        <div class="col-sm-4">
-
-
+        <div class="col-sm-8">
             <h1>{{name}}
                 <button class="btn btn-primary" ng-click="showText()">{{buttonText}}</button>
             </h1>
+            <div>
+                <p ng-show='show'>
+                    <code>
+                        {{content}}
+                    </code>
 
-
-            <div class='blue'>
-                <p ng-show='show'>{{content}}
                     <br><br>
                     <a href='https://raw.githubusercontent.com/weiyikong/fun/master/courses.json'>
                         <button class="btn btn-default">Go to Source</button>
                     </a>
                 </p>
             </div>
+        </div>
+        <div class="col-sm-4">
+            <div ng-show="showcheckbox">
+                <h1>
+                    <input type="button" class="btn btn-default" ng-click="showCharts()" value="Show Charts">
+                </h1>
+            </div>
+        </div>
+    </div>
 
+    <!--table-->
+    <div class="row">
+        <hr>
+        <div class="{{size}}">
             <p>Search: <input ng-model="st"></p>
-
             <div ng-repeat="i in content.events | filter:st">
                 <tr>
                     <strong>
@@ -140,8 +132,6 @@
                 </tr>
                 <hr>
             </div>
-
-
         </div>
         <div class="col-sm-8">
 
@@ -257,18 +247,32 @@
 
 <!--page 2-->
 <script type="text/ng-template" id="page2.html">
-
-
     <div class="container-fluid">
-
-        <h1>
-            {{name}}
-        </h1>
-        <hr>
-
         <div class="row">
-            <div class="col-sm-2">
+            <div class="col-sm-6">
+                <h1> {{name}} </h1>
+                <hr>
+            </div>
 
+            <div class="col-sm-6">
+                <label>Styles:</label>
+                <div class="btn-group">
+                    <button class="btn btn-primary">
+                        <label><input type="radio" name="optradio" ng-click="style('s')">Small</label>
+                    </button>
+                    <button class="btn btn-primary">
+                        <label><input type="radio" name="optradio" ng-click="style('m')" checked="checked">Medium</label>
+                    </button>
+                    <button class="btn btn-primary">
+                        <label><input type="radio" name="optradio" ng-click="style('l')">Large</label>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class={{size}}>
+                <!--1-->
                 <uib-accordion>
                     <div uib-accordion-group class="panel-default" heading="Dynamic Body Content 1">
 
@@ -280,16 +284,16 @@
                     </div>
                 </uib-accordion>
             </div>
-            <div class="col-sm-2">
-
+            <div class={{size}}>
+                <!--2-->
                 <uib-accordion>
                     <div uib-accordion-group class="panel-default" heading="Dynamic Body Content 2">
                         <div>
                             <form novalidate class="simple-form">
-                                <label>Name: <input type="text" ng-model="user.name"/></label><br/>
-                                <label>Age: <input type="number" ng-model="user.age"/></label><br/>
-                                Gender: <label><input type="radio" ng-model="user.gender" value="male"/>male</label>
-                                <label><input type="radio" ng-model="user.gender" value="female"/>female</label><br/>
+                                <label>Name: <input type="text" ng-model="user.a"/></label><br/>
+                                <label>Location: <input type="text" ng-model="user.b"/></label><br/>
+                                Gender: <label><input type="radio" ng-model="user.c" value="male"/>male</label>
+                                <label><input type="radio" ng-model="user.d" value="female"/>female</label><br/>
                                 <button class="btn btn-default btn-sm" ng-click="update(user)">SAVE</button>
                             </form>
                             <pre>data sent = {{master | json}}</pre>
@@ -298,7 +302,8 @@
                 </uib-accordion>
             </div>
 
-            <div class="col-sm-2">
+            <div class={{size}}>
+                <!--3-->
                 <uib-accordion>
                     <div uib-accordion-group class="panel-default" heading="Dynamic Body Content 3">
                         <div>
@@ -320,7 +325,8 @@
                 </uib-accordion>
             </div>
 
-            <div class="col-sm-2">
+            <div class={{size}}>
+                <!--4-->
                 <uib-accordion>
                     <div uib-accordion-group class="panel-default" heading="Dynamic Body Content 4">
                         <div>
@@ -347,30 +353,32 @@
                     </div>
                 </uib-accordion>
             </div>
-            <div class="col-sm-2">
+
+            <div class={{size}}>
+                <!--5-->
                 <uib-accordion>
                     <div uib-accordion-group class="panel-default" heading="Dynamic Body Content 5">
                         <div>
                             <form novalidate class="simple-form">
-                                <label>num1: <input type="number" ng-model="user.a"/></label><br/>
-                                <label>num2: <input type="number" ng-model="user.b"/></label><br/>
-                                <input type="submit" ng-click="update(user)" value="Save"/>
+                                <label>num1: <input type="number" ng-model="num.a"/></label><br/>
+                                <label>num2: <input type="number" ng-model="num.b"/></label><br/>
+                                <input type="submit" ng-click="update(num)" value="Save"/>
                             </form>
-                            <pre>user = {{user | json}}</pre>
+                            <pre>num = {{num | json}}</pre>
                             <pre>data sent = {{master | json}}</pre>
                         </div>
                     </div>
                 </uib-accordion>
             </div>
 
-            <div class="col-sm-2">
+            <div class={{size}}>
                 <uib-accordion>
                     <div uib-accordion-group class="panel-default" heading="Dynamic Body Content 6">
                         <div>
                             <form novalidate class="simple-form">
                                 Field1:<br> <label><input type="radio" ng-model="user.a"
                                                           value="option1"/>option1</label>
-                                <label><input type="radio" ng-model="user.a" value="option2"/>option2</label>
+                                <input type="radio" ng-model="user.a" value="option2"/>option2
                                 <label><input type="radio" ng-model="user.a" value="option3"/>option3</label><br/>
                                 <label><input type="radio" ng-model="user.a" value="option4"/>option4</label>
                                 <label><input type="radio" ng-model="user.a" value="option5"/>option5</label><br>
@@ -390,59 +398,69 @@
         </div>
 
         <hr>
-        <form novalidate class="simple-form">
+        <uib-accordion>
+            <div uib-accordion-group class="panel-default" heading="Dynamic Body Content 7">
+                <form novalidate class="simple-form">
 
-            <div class='row'>
-                <div class='col-md-2'>
-                    <label>Field1:<br>  <input type="text" ng-model="user.a"/></label>
-                </div>
-                <div class='col-md-2'>
-                    <label>Field2:<br>  <input type="text" ng-model="user.b"/></label>
-                </div>
-                <div class='col-md-2'>
-                    <label>Field3:<br>  <input type="text" ng-model="user.c"/></label>
-                </div>
-                <div class='col-md-2'>
-                    <label>Field4:<br>  <input type="text" ng-model="user.d"/></label>
-                </div>
-                <div class='col-md-2'>
-                    <label>Field5  : <br> <input type="text" ng-model="user.e"/></label>
-                </div>
-            </div>
-            <div class='row'>
-                <div class='col-md-2'>
-                    <label>Very Long Field6:<br> <input type="text" ng-model="user.f"/></label>
-                </div>
-                <div class='col-md-2'>
-                    <label>Field7:<br>  <input type="text" ng-model="user.g"/></label>
-                </div>
-                <div class='col-md-2'><label>Field8:<br>  <input type="text" ng-model="user.h"/></label></div>
-                <div class='col-md-2'><label>Field9:<br>  <input type="text" ng-model="user.i"/></label></div>
-                <div class='col-md-2'><label>Field10:<br>  <input type="text" ng-model="user.j"/></label></div>
-            </div>
+                    <div class='row'>
+                        <div class='col-md-2'>
+                            <label>Field1:<br> <input type="text" ng-model="user.a"/></label>
+                        </div>
+                        <div class='col-md-2'>
+                            <label>Field2:<br> <input type="text" ng-model="user.b"/></label>
+                        </div>
+                        <div class='col-md-2'>
+                            <label>Field3:<br> <input type="text" ng-model="user.c"/></label>
+                        </div>
+                        <div class='col-md-2'>
+                            <label>Field4:<br> <input type="text" ng-model="user.d"/></label>
+                        </div>
+                        <div class='col-md-2'>
+                            <label>Field5 : <br> <input type="text" ng-model="user.e"/></label>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-md-4'>
+                            <label>Very Long Field6:<br> </label> <textarea class="form-control" rows="5"
+                                                                            ng-model="user.f"></textarea>
+                        </div>
+                        <div class='col-md-4'>
+                            <label>Very Long Field7:<br> </label><textarea class="form-control" rows="5"
+                                                                           ng-model="user.g"></textarea>
+                        </div>
+                        <div class='col-md-4'>
+                            <label>Very Long Field8:<br> </label><textarea class="form-control" rows="5"
+                                                                           ng-model="user.h"></textarea>
+                        </div>
+                    </div>
 
-            <div class='row'>
-                <div class='col-md-4'>
-                </div>
-                <div class='col-md-4'>
-                    <h1>
-                        <button class="btn btn-default btn-lg" ng-click="update(user)">SAVE</button>
-                    </h1>
-                    <br>
-                    <pre>user = {{user | json}}</pre>
-                    <pre>data sent = {{master | json}}</pre>
-                </div>
+
+                    <div class='row'>
+                        <hr>
+                        <div class='col-md-4'>
+                        </div>
+                        <div class='col-md-4'>
+                            <h1>
+                                <button class="btn btn-default btn-lg" ng-click="update(user)" type="reset">SAVE
+                                </button>
+                                <button class="btn btn-default btn-lg" type="reset">RESET</button>
+                            </h1>
+                            <br>
+                            <pre>user = {{user | json}}</pre>
+                            <pre>data sent = {{master | json}}</pre>
+                        </div>
+                    </div>
+                </form>
             </div>
-        </form>
-    </div>
-    <br>
-    <div class='row'>
-        <div class="col-sm-4">
-            <p>
-                Please click on Dynamic Body Content to open.
-            </p>
+        </uib-accordion>
+        <br>
+        <div class='row'>
+            <div class="col-sm-4">
+                <p>
+                    Please click on Dynamic Body Content to open.
+                </p>
+            </div>
         </div>
-    </div>
 
     </div>
 </script>
@@ -516,287 +534,7 @@
         <canvas id="myChartpage3"></canvas>
     </div>
 </script>
+<script src="js/angular.js"></script>
 
-
-<!--module-->
-<!--config-->
-<script>
-
-    var app = angular.module('myApp', ['ngRoute', 'ngAnimate', 'ngSanitize', 'ui.bootstrap', 'ngTouch', 'ui.grid']);
-
-    app.config(function ($routeProvider) {
-        $routeProvider
-
-            .when('/', {
-                templateUrl: 'pages/page1.html',
-                controller: 'page1Controller'
-            })
-            .when('/page1-2', {
-                templateUrl: 'pages/page1-2.html',
-                controller: 'page1-2Controller'
-            })
-            .when('/page1-3', {
-                templateUrl: 'pages/page1-3.html',
-                controller: 'page1-3Controller'
-            })
-            .when('/home', {
-                templateUrl: 'home.html',
-                controller: 'homeController'
-            })
-            .when('/page2', {
-                templateUrl: 'page2.html',
-                controller: 'page2Controller'
-            })
-            .when('/page3', {
-                templateUrl: 'page3.html',
-                controller: 'page3Controller'
-            })
-            .otherwise({redirectTo: '/'});
-    });
-
-
-    //    home
-    app.controller('homeController', function ($scope) {
-        $scope.name = 'Home';
-        $scope.today = function () {
-            $scope.dt = new Date();
-        };
-        $scope.today();
-        $scope.mytime = new Date();
-
-    });
-
-    //page 1
-    app.controller('page1Controller', function ($scope, events) {
-        $scope.name = 'page1';
-        $scope.show = false;
-        events.success(function (data1) {
-            $scope.content = data1;
-            $scope.buttonText = 'show source';
-        });
-
-        $scope.showText = function () {
-            $scope.show = !$scope.show;
-            if ($scope.buttonText == 'show source')
-                $scope.buttonText = 'hide';
-            else
-                $scope.buttonText = 'show source';
-        };
-
-        new Chart(document.getElementById('myChart').getContext('2d'), {
-            type: 'line',
-            data: {
-                labels: ['1', '2', '3'],
-                datasets: [{
-                    label: 'oranges',
-                    data: [123, 231, 311],
-                    backgroundColor: "rgba(255,153,0,0.4)"
-                }]
-            }
-        });
-
-        new Chart(document.getElementById('myChart2').getContext('2d'), {
-            type: 'bar',
-            data: {
-                labels: ['1', '2', '3'],
-                datasets: [{
-                    label: 'oranges',
-                    data: [123, 231, 311],
-                    backgroundColor: "rgba(255,153,0,0.4)"
-                }]
-            }
-        });
-    });
-
-
-    //    1-2
-    app.controller('page1-2Controller', function ($scope, events2) {
-        $scope.name = 'page1-2';
-        events2.success(function (data2) {
-            $scope.content = data2;
-            $scope.sourceDescription = "json data is hosted by https://jsonplaceholder.typicode.com/posts ";
-            $scope.buttonText = 'show source';
-        });
-
-        $scope.showText = function () {
-            $scope.show = !$scope.show;
-            if ($scope.buttonText == 'show source')
-                $scope.buttonText = 'hide';
-            else
-                $scope.buttonText = 'show source';
-        }
-
-
-        new Chart(document.getElementById('page1-2chart').getContext('2d'), {
-            type: 'radar',
-            data: {
-                labels: ['1', '2', '3'],
-                datasets: [{
-                    label: 'oranges',
-                    data: [123, 231, 311],
-                    backgroundColor: "rgba(255,153,0,0.4)"
-                }]
-            }
-        });
-
-        new Chart(document.getElementById('page1-2chart2').getContext('2d'), {
-            type: 'polarArea',
-            data: {
-                labels: ['1', '2', '3'],
-                datasets: [{
-                    label: 'oranges',
-                    data: [123, 131, 311],
-                    backgroundColor: "rgba(155,153,111,0.4)"
-                }]
-            }
-        });
-    });
-
-    //    1-3
-    app.controller('page1-3Controller', function ($scope, events3) {
-        $scope.name = 'page1-3';
-        events3.success(function (data3) {
-            $scope.content = data3;
-            $scope.sourceDescription = "json data is hosted by https://jsonplaceholder.typicode.com/comments ";
-            $scope.buttonText = 'show source';
-        });
-
-        $scope.showText = function () {
-            $scope.show = !$scope.show;
-            if ($scope.buttonText == 'show source')
-                $scope.buttonText = 'hide';
-            else
-                $scope.buttonText = 'show source';
-        }
-    });
-    //page 2
-    app.controller('page2Controller', function ($scope) {
-        $scope.name = 'page2';
-
-        $scope.items = ['Item 1', 'Item 2', 'Item 3'];
-        $scope.data1 = {};
-
-        $scope.addItem = function () {
-            var newItemNo = $scope.items.length + 1;
-            $scope.items.push('Item ' + newItemNo);
-        };
-
-
-        $scope.master = {};
-
-        $scope.update = function (user) {
-            $scope.master = angular.copy(user);
-        };
-        $scope.send1 = function () {
-            $scope.data1 = angular.copy(JSON.stringify($scope.items.length));
-
-        }
-    });
-
-    //  page 3
-    app.controller('page3Controller', function ($scope) {
-        $scope.name = 'page3';
-
-
-        $scope.face1text = "You can do it! You are number 1!";
-        $scope.face2text = "You rolled a 2!";
-        $scope.face3text = "Hello! Its a 3!";
-        $scope.face4text = "Almost there! It won't take 4-ever!";
-        $scope.face5text = "Its a 5!";
-        $scope.face6text = "Its a 6!";
-        $scope.face7text = "100 more rolls!";
-        $scope.a = $scope.b = $scope.c = $scope.d = $scope.e = $scope.f = 0;
-        $scope.face7 = false;
-        $scope.count = 0;
-        //random button
-        $scope.random = function (showText) {
-            var num = getRandomInt(1, 6);
-            $scope.face1 = $scope.face2 = $scope.face3 = $scope.face4 = $scope.face5 = $scope.face6 = $scope.face7 = false;
-            switch (num) {
-                case 1:
-                    $scope.face1 = true;
-                    $scope.a++;
-                    break;
-                case 2:
-                    $scope.face2 = true;
-                    $scope.b++;
-                    break;
-                case 3:
-                    $scope.face3 = true;
-                    $scope.c++;
-                    break;
-                case 4:
-                    $scope.face4 = true;
-                    $scope.d++;
-                    break;
-                case 5:
-                    $scope.face5 = true;
-                    $scope.e++;
-                    break;
-                case 6:
-                    $scope.face6 = true;
-                    $scope.f++;
-            }
-            if (!showText) {
-                $scope.face1 = $scope.face2 = $scope.face3 = $scope.face4 = $scope.face5 = $scope.face6 = false;
-                $scope.face7 = true;
-            }
-            else
-                updatechart();
-            $scope.count++;
-            function getRandomInt(min, max) {
-                return Math.floor(Math.random() * (max - min + 1)) + min;
-            }
-        }//end random();
-        //random x 100 button
-        $scope.random100 = function () {
-            for (i = 0; i < 100; i++)
-                $scope.random();
-            updatechart();
-        }
-//                chart
-
-        function updatechart() {
-            new Chart(document.getElementById('myChartpage3').getContext('2d'), {
-                type: 'line',
-                data: {
-                    labels: ['1', '2', '3', '4', '5', '6'],
-                    datasets: [{
-                        label: 'oranges',
-                        data: [$scope.a, $scope.b, $scope.c, $scope.d, $scope.e, $scope.f],
-                        backgroundColor: "rgba(155,153,0,0.4)"
-                    }]
-                }
-            });
-        }
-    });
-
-
-    app.factory("events", ['$http', function ($http) {
-        return $http.get("https://raw.githubusercontent.com/weiyikong/fun/master/courses.json")
-            .success(function (data1) {
-                return data1;
-            })
-            .error(function (err) {
-                return err;
-            })
-    }]);
-
-    app.factory("events2", ['$http', function ($http) {
-        return $http.get('https://jsonplaceholder.typicode.com/posts')
-            .success(function (data2) {
-                return data2;
-            })
-    }])
-
-
-    app.factory("events3", ['$http', function ($http) {
-        return $http.get('https://jsonplaceholder.typicode.com/comments')
-            .success(function (data3) {
-                return data3;
-            })
-    }])
-
-</script>
 </body>
 </html>

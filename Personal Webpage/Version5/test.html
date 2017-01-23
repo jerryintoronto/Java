@@ -1,0 +1,144 @@
+<!doctype html>
+<html ng-app="myApp" xmlns="http://www.w3.org/1999/html">
+
+
+<head>
+    <!--dependencies-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+</head>
+<body>
+
+
+<!--view-->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#/home"> Home </a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href=#/1>   Page 1</a></li>
+            <li><a href="#/2"> Page 2</a></li>
+            <li><a href="#/3"> Page 3 </a></li>
+            <li><a href="#/4"> Page 4 </a></li>
+        </ul>
+    </div>
+</nav>
+
+<div ng-view></div>
+
+
+<!--home template-->
+<script type="text/ng-template" id="home.html">
+    <div class="row text-center">
+eafaefaefaefaeafe
+        {{name}}
+    </div>
+</script>
+
+<!--projects template-->
+<script type="text/ng-template" id="page1.html">
+    <div class="row text-center">
+        feafaefafaef
+        {{name}}
+    </div>
+
+</script>
+
+<!--about template-->
+<script type="text/ng-template" id="page2.html">
+    <div class="row text-center">
+
+        {{name}}
+    </div>
+</script>
+
+<!--contact template-->
+<script type="text/ng-template" id="page3.html">
+    <div class="row text-center">
+
+        {{name}}
+    </div>
+</script>
+
+
+<script type="text/ng-template" id="page4.html">
+    <div class="row text-center">
+
+    </div>
+</script>
+
+<script>
+
+    var app = angular.module('myApp', ['ngRoute']);
+
+    app.config(function ($routeProvider) {
+        $routeProvider
+            .when('#/home', {
+                templateUrl: '<h1>Banana</h1><p>Bananas contain around 75% water.</p>',
+                controller: 'homeController'
+            })
+            .when('/1', {
+                templateUrl: '<h1>Banana</h1><p>Bananas contain around 75% water.</p>',
+                controller: 'page1Controller'
+            })
+            .when('/2', {
+                templateUrl: 'page2.html',
+                controller: 'page2Controller'
+            })
+            .when('/3', {
+                templateUrl: 'page3.html',
+                controller: 'page3Controller'
+            })
+            .when('/4', {
+                templateUrl: 'page4.html',
+                controller: 'page4Controller'
+            })
+    });
+
+
+    //home
+    app.controller('homeController', function ($scope) {
+        $scope.name = 'Home';
+        console.log("EAFAFAEFEAFAFEAE")
+
+
+    });
+
+    //page 1
+    app.controller('page1Controller', function ($scope, events) {
+        console.log("EAFAFAEFEAFAFEAE")
+        $scope.name = 'Page1';
+    });
+
+
+    //page 2
+    app.controller('page2Controller', function ($scope) {
+        console.log("EAFAFAEFEAFAFEAE")
+        $scope.name = 'Page2';
+    });
+
+
+    //page 3
+    app.controller('page3Controller', function ($scope) {
+        $scope.name = 'page3';
+
+    });
+
+
+    //page 4
+    app.controller('page4Controller', function ($scope) {
+        $scope.name = 'page4';
+
+
+    });
+
+
+</script>
+</body>
+</html>

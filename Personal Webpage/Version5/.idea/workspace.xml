@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baa38ebb-da62-4bc5-a413-92d2db961e9f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular2.js" afterPath="$PROJECT_DIR$/angular2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/AngularSPA/js/angular.js" afterPath="$PROJECT_DIR$/angular/AngularSPA/js/angular.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main2.css" afterPath="$PROJECT_DIR$/main2.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main2.js" afterPath="$PROJECT_DIR$/main2.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,36 +23,79 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="600" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
+      <file leaf-file-name="main2.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4191">
+              <caret line="127" column="76" lean-forward="false" selection-start-line="127" selection-start-column="76" selection-end-line="127" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main2.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main2.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1947">
+              <caret line="59" column="17" lean-forward="false" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1155">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding>
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="angular.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular/AngularSPA/js/angular.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="792">
+              <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="33">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.css</find>
-      <find>setup</find>
-      <find>hover</find>
-      <find>css</find>
-      <find>bootstrap</find>
-      <find>sidenav a</find>
-      <find>save</find>
-      <find>white</find>
       <find>siden</find>
-      <find>body</find>
       <find>moder</find>
       <find>ui</find>
       <find>change t</find>
       <find>changefore</find>
       <find>chnagefo</find>
       <find>c</find>
-      <find>change</find>
       <find>change</find>
       <find>close</find>
       <find>home</find>
@@ -65,6 +109,16 @@
       <find>sidenav</find>
       <find>open</find>
       <find>myl</find>
+      <find>body</find>
+      <find>projects</find>
+      <find>jquery</find>
+      <find>v1</find>
+      <find>learnt</find>
+      <find>mu</find>
+      <find>oct</find>
+      <find>self</find>
+      <find>volu</find>
+      <find>frame</find>
     </findStrings>
     <replaceStrings>
       <replace>test2</replace>
@@ -87,7 +141,6 @@
         <option value="$PROJECT_DIR$/js/shared.js" />
         <option value="$PROJECT_DIR$/html/sidemenu.html" />
         <option value="$PROJECT_DIR$/angular/AngularSPA/view/page1.js" />
-        <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/angular/projects/top.html" />
         <option value="$PROJECT_DIR$/angular/projects/bot.html" />
         <option value="$PROJECT_DIR$/angular/projects.html" />
@@ -96,13 +149,16 @@
         <option value="$PROJECT_DIR$/css/sidemenu.css" />
         <option value="$PROJECT_DIR$/css/Normalize.css" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/angular/AngularSPA/js/angular.js" />
         <option value="$PROJECT_DIR$/spa2.html" />
         <option value="$PROJECT_DIR$/angular/AngularSPA/spa.html" />
         <option value="$PROJECT_DIR$/angular2.js" />
         <option value="$PROJECT_DIR$/main2.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/main2.css" />
+        <option value="$PROJECT_DIR$/v6.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/angular/AngularSPA/js/angular.js" />
+        <option value="$PROJECT_DIR$/index2.html" />
+        <option value="$PROJECT_DIR$/test.html" />
       </list>
     </option>
   </component>
@@ -136,8 +192,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -168,13 +222,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Version5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Version5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AngularSPA" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Version4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
@@ -193,11 +271,14 @@
       <recent name="C:\Users\J\Documents\GitHub\Projects\Personal Webpage\Version5" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="JavaScript Debug.v6.html">
     <configuration default="false" name="spa.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Version5/angular/AngularSPA/spa.html">
       <method />
     </configuration>
     <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Version5/index.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="v6.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Version5/v6.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -259,14 +340,16 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.spa.html" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.v6.html" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.spa.html" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.v6.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.spa.html" />
       </list>
     </recent_temporary>
   </component>
@@ -300,33 +383,60 @@
       <workItem from="1483975454097" duration="6081000" />
       <workItem from="1483981608818" duration="1316000" />
       <workItem from="1483988749959" duration="16082000" />
+      <workItem from="1484072373896" duration="2541000" />
+      <workItem from="1484116808625" duration="9287000" />
+      <workItem from="1484150530716" duration="2000" />
+      <workItem from="1484150537195" duration="2000" />
+      <workItem from="1484356533716" duration="2466000" />
+      <workItem from="1484404337325" duration="2382000" />
+      <workItem from="1484787424695" duration="599000" />
+      <workItem from="1485032558425" duration="148000" />
+      <workItem from="1485038843712" duration="3000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99741000" />
+    <option name="totallyTimeSpent" value="117171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="3026" height="1946" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967105" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967105" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24414062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967105" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -341,19 +451,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/angular/index.html" />
-    <entry file="file://$PROJECT_DIR$/angular/AngularSPA/spa.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding>
-            <element signature="n#script#5;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/index.html" />
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/index.html" />
@@ -388,67 +485,75 @@
     <entry file="file://$PROJECT_DIR$/contact.html" />
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/js/main.js" />
-    <entry file="file://$PROJECT_DIR$/test.html" />
     <entry file="file://$PROJECT_DIR$/css/sidemenu.css" />
     <entry file="file://$PROJECT_DIR$/js/utils.js" />
     <entry file="file://$PROJECT_DIR$/css/Normalize.css" />
     <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/AngularSPA/js/angular.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="260" column="6" lean-forward="false" selection-start-line="260" selection-start-column="6" selection-end-line="260" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/structure.JPG" />
-    <entry file="file://$PROJECT_DIR$/angular/AngularSPA/spa.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-          <folding>
-            <element signature="n#script#5;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angular2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-74">
           <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pic.jpg" />
+    <entry file="file://$PROJECT_DIR$/main2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4191">
+          <caret line="127" column="76" lean-forward="false" selection-start-line="127" selection-start-column="76" selection-end-line="127" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pic2.jpg" />
+    <entry file="file://$PROJECT_DIR$/v6.html" />
     <entry file="file://$PROJECT_DIR$/main2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="53" column="14" lean-forward="true" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
+        <state relative-caret-position="1947">
+          <caret line="59" column="17" lean-forward="false" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/AngularSPA/spa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1683">
+          <caret line="15" column="51" lean-forward="false" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="38" column="26" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="184" column="33" lean-forward="true" selection-start-line="184" selection-start-column="33" selection-end-line="184" selection-end-column="33" />
+        <state relative-caret-position="1155">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main2.js">
+    <entry file="file://$PROJECT_DIR$/angular/AngularSPA/js/angular.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
-          <caret line="167" column="0" lean-forward="false" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+        <state relative-caret-position="792">
+          <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
