@@ -1,7 +1,6 @@
 <?php
-
-// Start the session
 session_start();
+
 
 if($_GET['username'] == 'admin' && $_GET['password'] == 'a')
 {
@@ -20,9 +19,7 @@ else if ($_GET['username'] == 'joe' && $_GET['password'] == '123')
 
 else
 {
-    header("Location: failed.html");
+    header("Location: failed.php");
 }
 
-
-
-?>
+header("Location: success.php");

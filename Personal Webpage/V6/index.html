@@ -1,111 +1,255 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <title>Bootstrap Example</title>
+    <title>Jerry Kong</title>
+    <!-- Meta -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introducing Jerry Kong">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head> 
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar-wrapper">
+            <div class="profile-container">
+                <img class="profile" src="assets/images/profile.jpg" alt="" />
+                <h1 class="name">Jerry Kong</h1>
+                <h3 class="tagline">Computer Science Graduate</h3>
+            </div><!--//profile-container-->
+            
+            <div class="contact-container container-block">
+                <ul class="list-unstyled contact-list">
+                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto: kongw@uwindsor.ca">kongw@uwindsor.ca</a></li>
+                    <li class="phone"><i class="fa fa-phone"></i><a href="tel:519 567 3987">519 567 3987</a></li>
+                    <li class="website"><i class="fa fa-globe"></i><a href="http://jerrykong.ca" target="_blank">jerrykong.ca</a></li>
+                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://ca.linkedin.com/in/jerrywkong" target="_blank">Linkedin</a></li>
+                    <li class="github"><i class="fa fa-github"></i><a href="https://github.com/weiyikong/Projects" target="_blank">Github</a></li>
+                </ul>
+            </div><!--//contact-container-->
+            <div class="education-container container-block">
+                <h2 class="container-block-title">Education</h2>
+                <div class="item">
+                    <h4 class="degree">BA in Computer Science</h4>
+                    <h5 class="meta">University of Windsor</h5>
+                    <div class="time">2015 - 2016</div>
+                </div><!--//item-->
+                <div class="item">
+                    <h4 class="degree">BBA in Management and Accounting</h4>
+                    <h5 class="meta">University of Toronto</h5>
+                    <div class="time">2008 - 2012</div>
+                </div><!--//item-->
+            </div><!--//education-container-->
+            
+            <div class="languages-container container-block">
+                <h2 class="container-block-title">Languages</h2>
+                <ul class="list-unstyled interests-list">
+                    <li>English <span class="lang-desc">(Professional)</span></li>
+                    <li>Mandarin <span class="lang-desc">(Native)</span></li>
+
+                </ul>
+            </div><!--//interests-->
+            
+            <div class="interests-container container-block">
+                <h2 class="container-block-title">Interests</h2>
+                <ul class="list-unstyled interests-list">
+                    <li>Outdoor/Parks</li>
+                    <li>Badminton</li>
+                    <li>Cooking</li>
+                </ul>
+            </div><!--//interests-->
+            
+        </div><!--//sidebar-wrapper-->
 
 
-    <style>
-        body {
-            display: none;
-        }
-        h2 {
-            color: darkred;
-        }
 
-        #about {
-            color: darkslategrey;
-        }
-
-        .bold {
-            font-weight:bold;
-        }
+        <div class="main-wrapper">
 
 
-    </style>
 
-    <script>
-        $(document).ready(function(){
-            $('body').fadeIn(1000);
-        })
-    </script>
-</head>
-<body >
-
-<div class="container">
-    <h2>Jerry Kong</h2>
-    <table class="table">
-        <thead>
-        <tr>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td class = 'bold'>Jan - present </td>
-            <td>.Net, Node.JS, Azure, SQL, PHP: <br>
-                <em> learning in progress... </em>
-                <a class="button btn btn-info btn-sm" href = 'php1/index.html'> PHP, MYSQL: read, insert and delete</a> 
-            </td>
-        </tr>
-        <tr>
-            <td class = 'bold'>Nov - Jan</td>
-            <td>
-                Angular, jQuery and Bootstrap websites:<br>
-                <a class="button btn btn-info btn-sm" href="http://jerrykong.ca/legacy/Version5/angular/AngularSPA/spa.html">1</a>
-                <a class="button btn btn-info btn-sm" href="http://jerrykong.ca/legacy/Version5/">2a</a>
-                <a class="button btn btn-info btn-sm" href="http://jerrykong.ca/legacy/Version4/">2b</a>
-                <a class="button btn btn-info btn-sm" href="http://jerrykong.ca/legacy/Version3/">2c</a>
-                <a class="button btn btn-info btn-sm" href="http://jerrykong.ca/legacy/Version2/">2d</a>
-                <a class="button btn btn-info btn-sm" href="http://jerrykong.ca/legacy/Version1/">2e</a>
-                <br>
-            </td>
-        </tr>
-        <tr>
-            <td class = 'bold'>
-                Oct - Nov
-            </td>
-            <td>
-                Try out at Springboard:
-                <li>
-                    Implemented a feature using Groovy on Grails, SQL
-                </li>
-            </td>
-        </tr>
-        <tr>
-        </tr>
-         <tr>
-            <td class = 'bold'>May - Sep</td>
-            <td>
-                Volunter at WebGeeks:
-                <li>
-                    Implemented pages using Wordpress CMS - Avada Theme, and utilizing plugins such as image carousel and timeline.
-                </li>
-                <li>
-                    Used Photoshop to batch modify images to ideal size and quality.
-                </li>
+            <section class="section summary-section">
+                <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
+                <div class="summary">
+                    <p>Recent graduate who enjoys learning new web technologies and problem solving via coding. Fascinated with <a href = "https://github.com/weiyikong/Projects/tree/master/Basic%20Tutorials/MASM/2.Recursion"> recursion</a>. Appreciates Bootstrap.</p>
+                </div><!--//summary-->
+            </section><!--//section-->
 
 
-            </td>
-        </tr>
-        </tbody>
-    </table>
+            
+            <section class="section projects-section">
+                <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
+                <div class="intro">
 
-    <div id = 'about' class = 'col-sm-8'>
-        Requirements completed for B.C.S. [General Computer Science for University Graduates] at University of Windsor on September 2016.
-        My projects can be found here: <a class="button btn btn-info btn-sm" href="https://github.com/weiyikong/Projects">Github</a>
+                </div><!--//intro-->
 
+                <div class="item">
+                    <span class="project-title"><a href="http://jerrykong.ca/php1">PHP backend</a></span> - <span class="project-tagline">
+                    Simple login with MYSQL add and delete; with Bootstrap 4
+                </span>
+
+                </div><!--//item-->
+
+
+                <div class="item">
+                    <span class="project-title"><a href="http://jerrykong.ca/legacy/Version5/#/home">Angular SPA</a></span> - <span class="project-tagline">
+                    A responsive website with recursion.</span>
+                    
+                </div><!--//item-->
+                <div class="item">
+                    <span class="project-title"><a href="http://jerrykong.ca/legacy/Version5/angular/AngularSPA/spa.html#/home" target="_blank">Angular & JSON</a></span> -
+                    <span class="project-tagline">A responsive website using Angular and Bootstrap. Converts json to tables. </span>
+                </div><!--//item-->
+
+                <div class="item">
+                    <span class="project-title"><a href="http://jerrykong.ca/legacy/Version4/index.html#" target="_blank">jQuery Website</a></span> - <span class="project-tagline">
+                    A website built using jQuery with a side menu. Random color generation.</span>
+                </div><!--//item-->
+
+                <div class="item">
+                    <span class="project-title"><a href="https://github.com/weiyikong/Projects/tree/master/Coding%20Problems" target="_blank">Coding Problems</a></span> - <span class="project-tagline">
+                    Coding solutions in Java. Proud of my <a href = "https://github.com/weiyikong/Projects/blob/master/Coding%20Problems/POTW/POTW17.java"> huffman coding </a> solution. </span>
+                </div><!--//item-->
+
+                <div class="item">
+                    <span class="project-title"><a href="https://github.com/weiyikong/Projects/tree/master/Java%20Drawing%20and%20Chat" target="_blank">Chat and Draw</a></span> - <span class="project-tagline">
+                    Multithreading, GUI, Java Desktop app using Socket. </span>
+                </div><!--//item-->
+
+                <div class="item">
+                    <span class="project-title"><a href="https://github.com/weiyikong/Projects/tree/master/Recursion%20GUI%20Tracing%20in%20Java" target="_blank">Recursion Step by Step</a></span> - <span class="project-tagline">
+                    Java GUI that traces a recursion.</span>
+                </div><!--//item-->
+           <!--//item-->
+            </section><!--//section-->
+
+
+
+
+            <section class="section experiences-section">
+                <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
+
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Web Development Intern</h3>
+                            <div class="time">2016</div>
+                        </div><!--//upper-row-->
+                        <div class="company">Springboard</div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p>Implemented a feature using Groovy on Grails back end framework.</p>
+                    </div><!--//details-->
+                </div><!--//item-->
+
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Web Development Intern</h3>
+                            <div class="time">2016</div>
+                        </div><!--//upper-row-->
+                        <div class="company">WebGeeks</div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p>Developed webpages using Wordpress Content Management System themes and plugins. Edited photos utilizing Photoshop.</p>
+
+                    </div><!--//details-->
+                </div><!--//item-->
+
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Teacher Assistant</h3>
+                            <div class="time">2016</div>
+                        </div><!--//upper-row-->
+                        <div class="company">University of Windsor</div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p>Helped students with questions during office hours and labs explaining solutions via the whiteboard. Graded assignments.  </p>
+                    </div><!--//details-->
+                </div><!--//item-->
+
+            </section><!--//section-->
+
+
+
+
+            
+            <section class="skills-section section">
+                <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
+                <div class="skillset">        
+                    <div class="item">
+                        <h3 class="level-title">Java</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="88%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h3 class="level-title">Javascript &amp; jQuery</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="83%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h3 class="level-title">Angular</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="80%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h3 class="level-title">HTML5 &amp; CSS</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="77%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+                    
+
+                    <div class="item">
+                        <h3 class="level-title">Sketch &amp; Photoshop</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="56%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+                    
+                </div>  
+            </section><!--//skills-section-->
+            
+        </div><!--//main-body-->
     </div>
-
-
-
-
-</div>
-
-
-
+ 
+    <footer class="footer">
+        <div class="text-center">
+                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed </i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
-</html>
+</html> 
+
